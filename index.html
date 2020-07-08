@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
-	<title>My Website</title>
-	<body>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>work-in-progress...</title>
+
+<script src="workinprogress-animation/createjs-2015.11.26.min.js"></script>
+<script src="workinprogress-animation/work-in-progress.js"></script>
+
+	<body onload="init();">
 		<h1>Hello world!!!</h1>
 		<p>This is my website</p>
+
+		<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1280px; height:402px">
+			<canvas id="canvas" width="1280" height="402" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+			<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:402px; position: absolute; left: 0px; top: 0px; display: block;">
+			</div>
 	</body>
 </html>

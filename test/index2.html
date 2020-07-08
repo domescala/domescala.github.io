@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body { background-color:#fefefe; }
+.left {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.right {
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#bee {transition: transform .1s;
+
+width: 300px;
+height: 300px;
+background-color: rgb(255, 210, 86);
+border-radius: 150px;
+box-shadow: 5px 10px #888888;
+
+-webkit-box-shadow: 0px 0px 40px 0px rgba(255,202,56,1);
+-moz-box-shadow: 0px 0px 40px 0px rgba(255,202,56,1);
+box-shadow: 0px 0px 40px 0px rgba(255,202,56,1);
+z-index: 20;
+
+}
+#bee2 {transition: transform .1s;
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 86, 86);
+    border-radius: 150px;
+    box-shadow: 5px 10px #888888;
+    
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 86, 86,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 86, 86,1);
+    box-shadow: 0px 0px 10px 0px rgba(255, 86, 86,1);
+    z-index: 20;
+    }
+
+    .space{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 720px;
+        border: 2px black solid;
+        z-index: 20;
+    }
+    .space:hover{
+        border: 5px black solid;
+
+    }
+    .space2{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 720px;
+        border: 2px black solid;
+        background-color: #f06363 ;
+        z-index: 30;
+        
+    }
+ 
+    </style>
+<div class="space" > solo qua </div>
+
+    <div id="bee"></div>
+    <div id="bee2"></div>
+<div class="space2">il resto</div>
+    <script >
+
+var velocity = {bee: 100, bee2: 200};
+var flag = 1;
+
+var randomvelocity = Math.random()*1; 
+var randomvelocity2 = Math.random()*1; 
+
+var randompos  = {x:0, y:0} ; 
+var lastvect = {x:0, y:0} ; 
+var lastvect2 = {x:0, y:0} ;
+var dist = { x: 0, y:0};
+var dist2 = { x: 0, y:0};
+
+var bee = document.getElementById("bee");
+var bee2 = document.getElementById("bee2");
+document.addEventListener("mousemove", getMouse); 
+
+
+bee.style.position = "absolute"; //css		
+bee2.style.position = "absolute"; //css		
+var beepos = {x:0, y:0};
+var bee2pos = {x:0, y:0};
+
+setInterval(followMouse, 15);
+
+var mouse = {x:0, y:0}; 
+//mouse.x, mouse.y
+// console.log("mouse "+ mouse.x +" " + mouse.y);
+var dir = "right";
+function getMouse(e){
+    mouse.x = e.pageX;
+    mouse.y = e.pageY;
+    
+//  console.log("mosso");
+    flag = 1;
+
+
+//Checking directional change
+// if(mouse.x > beepos.x){
+//   dir = "right";
+// } else {
+//   dir = "left";
+// }
+}
+
+function followMouse(){
+    
+//  console.log("muovo");
+
+    
+    //1. find distance X , distance Y
+    if (flag == 0) {
+        dist = lastvect;
+        dist2 = lastvect2;
+    //  velocity.bee += randomvelocity;
+    //  velocity.bee2 += randomvelocity2;
+
+
+    }
+    else{
+    dist = { x: mouse.x - beepos.x, y:mouse.y - beepos.y}
+    dist2 = { x: mouse.x - bee2pos.x, y:mouse.y - bee2pos.y}
+    velocity = {bee: 100, bee2: 200};
+
+    }
+    //Easing motion
+//Progressive reduction of distance 
+
+    beepos.x += dist.x/(velocity.bee ); 
+    beepos.y += dist.y/velocity.bee;    
+
+    bee2pos.x += dist2.x/velocity.bee2;
+    bee2pos.y += dist2.y/velocity.bee2; 
+    
+    bee.style.left = beepos.x + "px";               
+    bee.style.top = beepos.y + "px";                 
+    
+    bee2.style.left = bee2pos.x -100+ "px";          
+    bee2.style.top = bee2pos.y -100+ "px";            
+    
+    
+
+// if (flag == 0) {
+//     velocity = {bee: 200, bee2: 300}
+//     mouse.x += randompos.x;
+//     mouse.y += randompos.y;
+// }
+// else{
+//     velocity = {bee: 100, bee2: 200}
+// }
+
+
+//Apply css class 
+// if (dir == "right"){
+//   bee.setAttribute("class", "right");
+// } else {
+//   bee.setAttribute("class", "left");        
+// }
+    
+}
+
+
+
+function controllo(){
+
+lastvect.x = dist.x 
+lastvect.y = dist.y;
+lastvect2.x = dist2.x ;
+lastvect2.y = dist2.y;
+flag = 0;
+}
+function randommouse(){
+    randompos.x = Math.random()*10; 
+    randompos.y = Math.random()*10; 
+    randomvelocity = Math.random()*1; 
+    randomvelocity2 = Math.random()*1; 
+    
+}
+    
+
+
+setInterval(controllo, 3000);
+setInterval(randommouse, 5000);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
