@@ -69,3 +69,7 @@ h2{
     font-weight: 600;
     margin: 20px;
 }
+div.freebirdFormviewerViewResponseLinksContainer{
+	visibility: hidden;
+	opacity: 0;
+}

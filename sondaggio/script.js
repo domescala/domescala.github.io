@@ -61,14 +61,10 @@ function f() {
 
     }
 
-
 }
 function richieste() {
 
-
-
     for (let i = 0; i < (link[prop].length); i++) {
-
 
         $.ajaxSetup({
             scriptCharset: "utf-8", //or "ISO-8859-1",
@@ -80,13 +76,9 @@ function richieste() {
             function (data) {
 
                 var c = $(data.contents).find("script")[0].innerHTML;
-
-
                 eval(c);
-
                 risposte[i] = ANALYTICS_LOAD_DATA_[5];
 
-                // console.log(check());
                 if (check()) {  // se l'array di risposte è pieno 
                     mostra_form()
                 }
@@ -168,7 +160,6 @@ function home() {
 }
 function nontrovato() {
     document.body.appendChild(document.createElement("BR"));
-
     const h2 = document.createElement("H2"); 
     const a = document.createElement("A");   
     const p = document.createElement("P"); 
@@ -193,7 +184,6 @@ function nontrovato() {
  
 
     document.body.appendChild(a).appendChild(p);
-
 
 
 }
