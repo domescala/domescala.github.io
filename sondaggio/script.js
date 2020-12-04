@@ -159,7 +159,7 @@ function home() {
         const a = document.createElement("A");   
         const p = document.createElement("P");  
         a.href = "?"+key;
-        p.innerHTML = key.replaceAll("_", " ");                  
+        p.innerHTML = key.replace(/_/gi, " ");                  
 
         document.body.appendChild(a).appendChild(p);
 
@@ -170,26 +170,30 @@ function nontrovato() {
     document.body.appendChild(document.createElement("BR"));
 
     const h2 = document.createElement("H2"); 
-    h2.innerHTML = "404";
-    document.body.appendChild(h2);
+    const a = document.createElement("A");   
+    const p = document.createElement("P"); 
     const h1 = document.createElement("H1"); 
+
+    h2.innerHTML = "404";
     h1.innerHTML = "Sondaggio non trovato";
-    document.body.appendChild(h1);
     document.body.style["text-align"] =  "center";
     document.body.style["background-color"] =  "#ff2f50";
     h1.style["color"] = "#ffffff";
     h2.style["color"] = "#ffffff";
-
-    document.body.appendChild(document.createElement("BR"));
-    document.body.appendChild(document.createElement("BR"));
-
-    const a = document.createElement("A");   
-    const p = document.createElement("P");  
     p.innerHTML = "Vai alla home";
-
-    a.href = "../";
-    document.body.appendChild(a).appendChild(p);
     a.style["color"] = "#ffffff";
+    a.href = "./";
+
+    document.body.appendChild(h2);
+    document.body.appendChild(h1);
+
+    document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
+
+ 
+
+    document.body.appendChild(a).appendChild(p);
+
 
 
 }
