@@ -48,7 +48,7 @@ function richieste() {
                 contentType: "application/json; charset=utf-8"
             });
             var linkanalitycs = link[prop][i] + "/viewanalytics";
-            $.getJSON("http://whateverorigin.org/get?url=" +
+            $.getJSON("https://api.allorigins.win/get?url=" +
                 encodeURIComponent(linkanalitycs) + "&callback=?",
                 function (data) {
 
