@@ -158,7 +158,7 @@ function home() {
         
         const a = document.createElement("A");   
         const p = document.createElement("P");  
-        a.href = "/?"+key;
+        a.href = "?"+key;
         p.innerHTML = key.replaceAll("_", " ");                  
 
         document.body.appendChild(a).appendChild(p);
