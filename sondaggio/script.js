@@ -47,23 +47,32 @@ function f() {
 
 
     if (key && !link[key]) {        // se key è definita && link[key] è indefinita  = se key esiste ma non c'è nell'elenco
+    document.getElementById("idbody").style.animation = "none";
 
         console.log("sondaggio non trovato 404")
         nontrovato();
+    document.getElementById("titolo").innerHTML = "404";
+
+
     }
     if (!key && !link[key]) {
         console.log("HOME");
-        home();
+    document.getElementById("idbody").style.animation = "none";
+    document.getElementById("titolo").innerHTML = "Sondaggio";
+
+    home();
+
 
     }
     if (key && link[key]) {
         richieste();
+    document.getElementById("titolo").innerHTML = "Sondaggio "+ key.replace(/_/gi, " ");
+
     }
 
 }
 function richieste() {
-	
-
+    
     for (let i = 0; i < (link[prop].length); i++) {
 
         $.ajaxSetup({
