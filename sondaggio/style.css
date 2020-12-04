@@ -87,6 +87,6 @@ div.freebirdFormviewerViewResponseLinksContainer{
 	opacity: 0;
 }
 body{
-	animation: intro 3s ease-in-out alternate infinite;
+	animation: intro 1s ease-in-out alternate infinite;
 
 }
