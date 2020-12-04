@@ -3,6 +3,19 @@
    License: none (public domain)
 */
 
+@keyframes intro{
+	0%{
+		background-color: rgb(255, 255, 255);
+
+	}
+
+	100%{
+		background-color: rgb(200, 200, 200);
+
+	}
+
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,4 +85,8 @@ h2{
 div.freebirdFormviewerViewResponseLinksContainer{
 	visibility: hidden;
 	opacity: 0;
+}
+body{
+	animation: intro 3s ease-in-out alternate infinite;
+
 }

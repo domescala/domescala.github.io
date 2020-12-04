@@ -45,6 +45,7 @@ var link = {
 
 function f() {
 
+
     if (key && !link[key]) {        // se key è definita && link[key] è indefinita  = se key esiste ma non c'è nell'elenco
 
         console.log("sondaggio non trovato 404")
@@ -57,12 +58,11 @@ function f() {
     }
     if (key && link[key]) {
         richieste();
-
-
     }
 
 }
 function richieste() {
+	
 
     for (let i = 0; i < (link[prop].length); i++) {
 
@@ -79,6 +79,8 @@ function richieste() {
                 eval(c);
                 risposte[i] = ANALYTICS_LOAD_DATA_[5];
 
+
+
                 if (check()) {  // se l'array di risposte è pieno 
                     mostra_form()
                 }
@@ -94,13 +96,15 @@ function richieste() {
 
 function mostra_form() {
     const frame = document.createElement("IFRAME");   // Create a <button> element
-    frame.id="form" 
-    frame.width="100%" 
-    frame.height="-webkit-fill-available" 
-    frame.frameborder="0" 
-    frame.marginheight="0" 
-    frame.marginwidth="0"
-    document.body.appendChild(frame)
+    frame.id="form" ;
+    frame.width="100%" ;
+    frame.height="-webkit-fill-available" ;
+    frame.frameborder="0" ;
+    frame.marginheight="0" ;
+    frame.marginwidth="0";
+    // frame.hidden = true;
+
+    document.body.appendChild(frame);
 
     index_form_minore = minore(risposte);
 
@@ -108,6 +112,9 @@ function mostra_form() {
 
     document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
     document.getElementById("form").style["height"] = "-webkit-fill-available";
+    
+    document.getElementById("idbody").style.animation = "none";
+    
 }
 
 function minore(a) {
@@ -187,3 +194,12 @@ function nontrovato() {
 
 
 }
+// function name() {
+//     //document.getElementsByClassName("freebirdFormviewerViewResponseLinksContainer")[0].hidden = true
+//     const stile = document.createElement("STYLE");
+//     stile.innerHTML = "div.freebirdFormviewerViewResponseLinksContainer{        opacity: 0;    }"
+//     document.body.appendChild(stile);
+//     // setTimeout(() => {
+
+//     // }, 2000);
+// }
