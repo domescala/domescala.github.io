@@ -10,7 +10,6 @@ var key = url.split("?")[1];
 
 
 
-var  altezza = "1920";
 
 // console.log(url);
 // console.log("chiave " +key)
@@ -99,8 +98,8 @@ function richieste() {
 
                 console.log(i);
 
-                console.log(risposte[i]);
-                console.log(check());
+                // console.log(risposte[i]);
+                // console.log(check());
 
                 if (check()) {  // se l'array di risposte è pieno 
                     mostra_form()
@@ -116,28 +115,37 @@ function richieste() {
 }
 
 function mostra_form() {
-    console.log($(document).height());
-    altezza = $(document).height();
+    // console.log($(document).height());
+    // var altezza = 1920;
+
+    
+    // console.log(altezza);
+
     const frame = document.createElement("IFRAME");   // Create a <button> element
     frame.id="form" ;
     frame.style.width="100%" ;
-    frame.style.height= altezza + "px";
     // frame.style.height="-webkit-fill-available" ;
     // frame.style.height="fill-available" ;
     // frame.style.height="-moz-available" ;
-    frame.style.frameborder="0" ;
-    frame.style.marginheight="0" ;
-    frame.style.marginwidth="0";
+    frame.frameborder="0" ;
+    frame.marginheight="0" ;
+    frame.marginwidth="0";
     // frame.hidden = true;
 
     document.body.appendChild(frame);
 
     index_form_minore = minore(risposte);
 
+var altezza = window.screen.height;
+    // console.log($(document).height());
+
+    console.log("altezza:" + altezza.toString());
+
+    frame.style.height= altezza.toString() + "px";
 
 
     document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
-    document.getElementById("form").style["height"] = "-webkit-fill-available";
+    // document.getElementById("form").style["height"] = "-webkit-fill-available";
     
     document.getElementById("idbody").style.animation = "none";
     
