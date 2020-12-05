@@ -156,7 +156,7 @@ function check() {
 
 
     for (let i = 0; i < risposte.length; i++) { // per ogni elemento controlla che non sia vuoto e che il numero di elementi sia al completo
-        if (Number.isInteger(risposte[i] && risposte.length == link[prop].length)) {
+        if ((Number.isInteger(risposte[i]) && risposte.length == link[prop].length)) {
             
             return true;
         }
