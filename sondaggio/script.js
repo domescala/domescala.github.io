@@ -25,16 +25,25 @@ var link = {
         "https://docs.google.com/forms/d/1HD-MWmGgAmCDC4CGBoy0IoxBBMGM-LnGQZuJWcHvH5E",
 
     ],
-    "prop2": [
-        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeM87gTSs3tU8c_PJ2RaxWQfzp1emUc3kR-hbvJAXX4bPKpsw",
-        "link20",
-        "link30",
-        "link40"]
+    "the_alla_pesca_o_the_al_limone": [
+        "https://docs.google.com/forms/d/12r0Vhc5mitPBadE0MZg2Y2C1huYhBX0sehTv-Ejdcc0",
+        "https://docs.google.com/forms/d/14_SU0eaAeSegTjjm6zjNx2C8aBMk6JLer03ocgVMY5g",
+        "https://docs.google.com/forms/d/1yP6RwVtXeNuDjtHdhuY-nLKr0jzegN97jQZ2IPQsI_4",
+        "https://docs.google.com/forms/d/1jLmVLim2XexkQOH4B71EmK_h4RFL7aptwLvNNCVGPpg",
+        "https://docs.google.com/forms/d/1EUSQksDNIYkW68bJ93R30AhS90nGt2GCG9Ok7iV_8mc",
+        "https://docs.google.com/forms/d/1pFs5jec0Vno_iMClzpmHOkeGh2Jw8AMG9C-daQLpqwg",
+        "https://docs.google.com/forms/d/1-ySeIkqSyuJDXlRltMKkfQlharzMoqHJBBh7E-FH_2E",
+        "https://docs.google.com/forms/d/1xbmqHNPaZw_pVfPjFK6ga60fg6mseL98i--a4bU6UHs",
+        "https://docs.google.com/forms/d/1bLEwvvvvplr5Pw5Po62wvkeg-mH6UqgkEN4ug6da0k0",
+        "https://docs.google.com/forms/d/1MhQQL8-E_Vi4q8VmfAj0UH4X5MxaXpD9tSjFshinc0c",
+
+    ],    
+
+        
 };
 
 // AGGIUNGERE SE KEY NON ESISTE 404
 // ordinare file
-
 
 
 
@@ -88,7 +97,10 @@ function richieste() {
                 eval(c);
                 risposte[i] = ANALYTICS_LOAD_DATA_[5];
 
+                console.log(i);
 
+                console.log(risposte[i]);
+                console.log(check());
 
                 if (check()) {  // se l'array di risposte è pieno 
                     mostra_form()
@@ -144,10 +156,11 @@ function check() {
 
 
     for (let i = 0; i < risposte.length; i++) { // per ogni elemento controlla che non sia vuoto e che il numero di elementi sia al completo
-        if (!Number.isInteger(risposte[i] || risposte.length != link[prop].length)) {
-            return false;
+        if (Number.isInteger(risposte[i] && risposte.length == link[prop].length)) {
+            
+            return true;
         }
-        return true
+        return false;
 
     }
 }
