@@ -7,7 +7,7 @@ var risposte = new Array();
 var url = document.URL;
 
 var key = url.split("?")[1];
-
+var altezza = window.screen.height; 
 
 
 
@@ -53,6 +53,7 @@ var link = {
 
 function f() {
 
+    altezza = window.screen.height;
 
     if (key && !link[key]) {        // se key è definita && link[key] è indefinita  = se key esiste ma non c'è nell'elenco
     document.getElementById("idbody").style.animation = "none";
@@ -98,8 +99,8 @@ function richieste() {
 
                 console.log(i);
 
-                // console.log(risposte[i]);
-                // console.log(check());
+                console.log(risposte[i]);
+                console.log(check());
 
                 if (check()) {  // se l'array di risposte è pieno 
                     mostra_form()
@@ -136,7 +137,7 @@ function mostra_form() {
 
     index_form_minore = minore(risposte);
 
-var altezza = window.screen.height;
+    // var altezza = window.screen.height;
     // console.log($(document).height());
 
     console.log("altezza:" + altezza.toString());
