@@ -123,7 +123,7 @@ function mostra_form() {
 
     const frame = document.createElement("IFRAME");   // Create a <button> element
     frame.id="form" ;
-    frame.style.width="100%" ;
+    frame.width="100%" ;
     // frame.style.height="-webkit-fill-available" ;
     // frame.style.height="fill-available" ;
     // frame.style.height="-moz-available" ;
@@ -141,7 +141,7 @@ var altezza = window.screen.height;
 
     console.log("altezza:" + altezza.toString());
 
-    frame.style.height= altezza.toString() + "px";
+    frame.height= altezza.toString() + "px";
 
 
     document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
