@@ -118,11 +118,14 @@ function richieste() {
 function mostra_form() {
     const frame = document.createElement("IFRAME");   // Create a <button> element
     frame.id="form" ;
-    frame.width="100%" ;
-    frame.height="-webkit-fill-available" ;
-    frame.frameborder="0" ;
-    frame.marginheight="0" ;
-    frame.marginwidth="0";
+    frame.style.width="100%" ;
+    frame.style.height="1920px" ;
+    frame.style.height="-webkit-fill-available" ;
+    frame.style.height="fill-available" ;
+    frame.style.height="-moz-available" ;
+    frame.style.frameborder="0" ;
+    frame.style.marginheight="0" ;
+    frame.style.marginwidth="0";
     // frame.hidden = true;
 
     document.body.appendChild(frame);
