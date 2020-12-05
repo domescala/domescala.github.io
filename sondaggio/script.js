@@ -163,7 +163,7 @@ function mostra_form() {
 function minore(a) {
 
     var minimo = Math.min.apply(0, a); // trova il minor numero di risposte
-    var listaminori = new Array();    // creo una lista con un solo elemento
+    var listaminori = new Array;    // creo una lista con un solo elemento
 
     
     console.log(a);
@@ -183,9 +183,15 @@ function minore(a) {
 
     }
     var min = 0;
-    var max = listaminori.length;
-    var indice_estratto = Math.round(Math.random() * (max - min) + min);
-    console.log(indice_estratto);
+    var max = listaminori.length - 1;
+    console.log("lista dei minori è lunga " + listaminori.length);
+
+    // if (max == 1) {
+    //     return
+    // }
+    var indice_estratto = Math.round(Math.random() * (max - min) + min) ;
+    console.log("indice_estratto "+ indice_estratto);
+    console.log("ritorna " +listaminori[indice_estratto]);
     
     return listaminori[indice_estratto];
     // genero un numero random da 1 a listaminori lenght
