@@ -10,7 +10,7 @@ var key = url.split("?")[1];
 
 
 
-
+var  altezza = "1920";
 
 // console.log(url);
 // console.log("chiave " +key)
@@ -116,13 +116,15 @@ function richieste() {
 }
 
 function mostra_form() {
+    console.log($(document).height());
+    altezza = $(document).height();
     const frame = document.createElement("IFRAME");   // Create a <button> element
     frame.id="form" ;
     frame.style.width="100%" ;
-    frame.style.height="1920px" ;
-    frame.style.height="-webkit-fill-available" ;
-    frame.style.height="fill-available" ;
-    frame.style.height="-moz-available" ;
+    frame.style.height= altezza + "px";
+    // frame.style.height="-webkit-fill-available" ;
+    // frame.style.height="fill-available" ;
+    // frame.style.height="-moz-available" ;
     frame.style.frameborder="0" ;
     frame.style.marginheight="0" ;
     frame.style.marginwidth="0";
