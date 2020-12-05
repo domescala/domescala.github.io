@@ -8,8 +8,9 @@ var url = document.URL;
 
 var key = url.split("?")[1];
 var altezza = window.screen.height; 
+// var altezza = "1920px"; 
 
-
+var listaminori = new Array();
 
 // console.log(url);
 // console.log("chiave " +key)
@@ -17,13 +18,20 @@ var altezza = window.screen.height;
 var prop = key;
 
 var link = {
-    "tende_al_grafene": [ //proprietario e chiave nel url
-        "https://docs.google.com/forms/d/1DSzHG0GpTR4diA8cLeFuQG3lAG-MEJ4mQMKCS881Yfs", // link "pulito" senza viewform o viwe analytics ecc
-        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeM87gTSs3tU8c_PJ2RaxWQfzp1emUc3kR-hbvJAXX4bPKpsw",
-        "https://docs.google.com/forms/d/1QW63MnJ6_H1bdTcXGUdGJxQVn3lozM-IH0hc5SbLw3w",
-        "https://docs.google.com/forms/d/1HD-MWmGgAmCDC4CGBoy0IoxBBMGM-LnGQZuJWcHvH5E",
-
-    ],
+// 1
+//note
+"tenda_da_campeggio_innovativa": [
+"https://docs.google.com/forms/d/1mwQvflYLPuJimfTQSs_22qfKS64QRmllZbC7s1nD9Ek",
+"https://docs.google.com/forms/d/1RYb7rwZAD_VZwIE2j9g7JfcTEBrY9FhAtjHRlpVhuvs",
+"https://docs.google.com/forms/d/1dQRvPfKtH4McEEnU1LjCy5OivuVbaf6tkrlAt079el0",
+"https://docs.google.com/forms/d/1O5Dd7Tv-_szDg-n3M5wZ-AkMadzQIWlc3vK2hEDAakI",
+"https://docs.google.com/forms/d/1hyoHuL9TeKjXP3v-PCeoFADwOeyGf9tEmEHoHZ7g7eI",
+"https://docs.google.com/forms/d/1rB2GXpd8MLnTmrSkitmd7sP9XCayFPu_Wg85BzTSTxI",
+"https://docs.google.com/forms/d/1NiIlDHxet-SBf22VnrHlquxv8AdjgUNpXdj7vabvUD8",
+"https://docs.google.com/forms/d/1RMFIHcPW5-lihOV_FY6eqlBpElwpm1IpDXntttEnzmU",
+"https://docs.google.com/forms/d/1pmDiu5aDyrqlVjMRpCEs7S-WsHGeSrWtchuSARHslVc",
+"https://docs.google.com/forms/d/1jF3MGNRn9MLZyKMS-_XKxlPweZ2dDTmKlKJQG6Y9EkI",
+],
     "the_alla_pesca_o_the_al_limone": [
         "https://docs.google.com/forms/d/12r0Vhc5mitPBadE0MZg2Y2C1huYhBX0sehTv-Ejdcc0",
         "https://docs.google.com/forms/d/14_SU0eaAeSegTjjm6zjNx2C8aBMk6JLer03ocgVMY5g",
@@ -142,7 +150,7 @@ function mostra_form() {
 
     console.log("altezza:" + altezza.toString());
 
-    frame.height= altezza.toString() + "px";
+    frame.height= altezza.toString();
 
 
     document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
@@ -155,16 +163,22 @@ function mostra_form() {
 function minore(a) {
 
     var minimo = Math.min.apply(0, a); // trova il minor numero di risposte
-
+        // creo una lista con un solo elemento
 
     for (let i = 0; i < a.length; i++) {
-        if (a[i] == minimo) {
-            return i; // ritorna l'indice del primo form col minor numero di risposte
+
+        if (a[i] == minimo) { // se ad i c'è un minore 
+            listaminori.push(i);
         }
 
-
-
     }
+    var min = 0;
+    var max = listaminori.length;
+    var estratto = Math.round(Math.random() * (max - min) + min);
+    console.log(estratto);
+    return estratto;
+    // genero un numero random da 1 a listaminori lenght
+
 }
 function check() {
 
