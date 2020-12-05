@@ -10,7 +10,7 @@ var key = url.split("?")[1];
 var altezza = window.screen.height; 
 // var altezza = "1920px"; 
 
-var listaminori = new Array();
+
 
 // console.log(url);
 // console.log("chiave " +key)
@@ -163,20 +163,31 @@ function mostra_form() {
 function minore(a) {
 
     var minimo = Math.min.apply(0, a); // trova il minor numero di risposte
-        // creo una lista con un solo elemento
+    var listaminori = new Array();    // creo una lista con un solo elemento
+
+    
+    console.log(a);
+    console.log("minimo: " + minimo);
+    
 
     for (let i = 0; i < a.length; i++) {
+    
 
         if (a[i] == minimo) { // se ad i c'è un minore 
+    console.log(a[i] + " è un minimo ");
+
             listaminori.push(i);
+    console.log("lista dei minori " + listaminori);
+
         }
 
     }
     var min = 0;
     var max = listaminori.length;
-    var estratto = Math.round(Math.random() * (max - min) + min);
-    console.log(estratto);
-    return estratto;
+    var indice_estratto = Math.round(Math.random() * (max - min) + min);
+    console.log(indice_estratto);
+    
+    return listaminori[indice_estratto];
     // genero un numero random da 1 a listaminori lenght
 
 }
