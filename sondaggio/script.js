@@ -7,7 +7,7 @@ var risposte = new Array();
 var url = document.URL;
 
 var key = url.split("?")[1];
-var altezza = window.screen.height; 
+// var altezza = window.screen.height; 
 // var altezza = "1920px"; 
 
 
@@ -60,8 +60,8 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSctHpyv1rGMMcxS89sEcWnSTc-SIJES0SFnIXpC7tpN8waOHg",
             ],
 
-        // 3		
-//	Gruppo 23	
+        // 3
+//Gruppo 23
 "automobile_a_idrogeno": [
     "https://docs.google.com/forms/d/e/1FAIpQLSelEIqbBoL2L3boTKnxgz8mRwjqXRE2p_DjjjCeZHz7-XPTyA",
     "https://docs.google.com/forms/d/e/1FAIpQLSfQpDZj3Xwzy313-wCkKgH_u1pFIywL5QWmsVgFiiKaPNMA3A",
@@ -73,6 +73,20 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLScSTA5Hy5X536jFX_AlwLOlxUlKnxwqJO4lMKZf0JVxn_ZNxg",
     "https://docs.google.com/forms/d/e/1FAIpQLScEuAYWPDKSwyjlihB9W6PuEnrTvJ_j7eMH75Qdap0q51eN8g",
     "https://docs.google.com/forms/d/e/1FAIpQLScdhwIk76UQ9tOXN0urd4WuhrwoP_bfATnnO042tEhHzNaTZg",
+            ],
+            // 4
+//Gruppo 25
+"cover_da_smartphone_con_memoria_ssd_integrata": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSfUvJWgR6lg7o_jxE8FqAKLFq_90XcKNY9txL5OpT1Lbv6URA",
+    "https://docs.google.com/forms/d/e/1FAIpQLSc6SzDSttpH5vRSIjTRXhgzAsaEnogLJ0_-20q_Jwf0n7Ew2A",
+    "https://docs.google.com/forms/d/e/1FAIpQLSefcecdGY_hZCjrDXFCJ7pnXxow-aNtl5MYI7hyv5SYVK8ShQ",
+    "https://docs.google.com/forms/d/e/1FAIpQLSchQLaxoq9Yca5n4-TdFhKIfPjBibOJopo2ogKt3lxmk-ec7g",
+    "https://docs.google.com/forms/d/e/1FAIpQLSflg6y6x178av1koBbgIY2ciQCpT1hLc3xSCS82uwsjP5rnxQ",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfvBuQoyQ6PEMR9qX9WfkdTAsIjKkqvKp3WipoCvIWF1W1PsA",
+    "https://docs.google.com/forms/d/e/1FAIpQLScNlamyP5tZsQvBNuifBsLDXlkjrsEw0bbToCiAOsWRLbHDnw",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfJzCmnaY7n_R70FyESXVkLhJ4L3inuE14-1hPNnwNhDkSaLg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdnmdLax80N22fFHOihYe8Ig_0msi8wIRmGVdZhtDWUtClczg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfNTy8eS_2em1YJbrIpn971FHeCZU18rJlUTBDvv45g8DoEQQ",
             ],
 };
 
@@ -88,7 +102,7 @@ var link = {
 
 function f() {
 
-    altezza = window.screen.height;
+    //  altezza = window.screen.height;
 
     if (key && !link[key]) {        // se key è definita && link[key] è indefinita  = se key esiste ma non c'è nell'elenco
     document.getElementById("idbody").style.animation = "none";
@@ -174,16 +188,26 @@ function mostra_form() {
 
     // var altezza = window.screen.height;
     // console.log($(document).height());
+    // var  altezza = (window.screen.height).toString() + "px";
 
-    console.log("altezza:" + altezza.toString());
+    // console.log("altezza:" + altezza);
 
-    frame.height= altezza.toString();
-
+    frame.style.height= "5000px";
+    
 
     document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
     // document.getElementById("form").style["height"] = "-webkit-fill-available";
     
     document.getElementById("idbody").style.animation = "none";
+    // console.log(risposte);
+    // setTimeout(() => {
+    //    var sommarisposte = 0;
+    //    for (let i = 0; i < risposte.length; i++) {
+    //        sommarisposte += risposte[i];
+           
+    //    }
+    //    console.log(sommarisposte); 
+    // }, 1000);
     
 }
 
@@ -300,3 +324,5 @@ function nontrovato() {
 
 //     // }, 2000);
 // }
+
+
