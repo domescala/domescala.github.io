@@ -248,14 +248,14 @@ function home() {
     for (let i = 0; i < Object.keys(link).length; i++) {
 
         var key = Object.keys(link)[i];
-        const button = document.createElement("button"); 
-        button.id = toStrig(key);
+        // const button = document.createElement("button"); 
+        // button.id = toStrig(key);
         const a = document.createElement("A");   
         const p = document.createElement("P");  
         a.href = "?"+key;
         p.innerHTML = key.replace(/_/gi, " ");      
 
-        button.innerHTML = "risultati";                  
+        // button.innerHTML = "risultati";                  
 
         document.body.appendChild(a).appendChild(p);
 
