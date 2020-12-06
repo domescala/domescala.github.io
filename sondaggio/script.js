@@ -102,6 +102,22 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSddoGbXQWq7aP010CC1L2COnXRCQJVFiC4nmXwy2Xyf5wklbA",
     "https://docs.google.com/forms/d/187RfBohep4IW-932V885x8ciwzAOEtCRZ64LEIoNNdU",
             ],
+            // 7		
+//	gruppo 14	
+// 7		
+//	gruppo 14	
+"etextile": [
+    "https://docs.google.com/forms/d/1y8frgEwMY2xVeO99pglytUPWB1nHdAjmgaRI1gkyKqQ",
+    "https://docs.google.com/forms/d/1847Y6lU0CmW-_YgoVXYt3Voz9vxqcGRuW5zGx1wh1nw",
+    "https://docs.google.com/forms/d/1DQGP8S17iR4Ze-0Y3ljChBN_G1IT4ig6B8op97A8wC4",
+    "https://docs.google.com/forms/d/1CEmDy7voctf7Jj20yk7oPWI1HGDgRN7FQkiDLSY0mSo",
+    "https://docs.google.com/forms/d/1nA6Aj5bhepkzfDwjCS9rhEcdOLA2YasU3NJddzDfIIU",
+    "https://docs.google.com/forms/d/1WHih4500hmQj2y__iA9ODT9LBIuvIbjCQRMGWYS4_kU",
+    "https://docs.google.com/forms/d/1IHi9QwcBYDUMjowS22F514OEep1GfCcQmFMZ2G8LaN8",
+    "https://docs.google.com/forms/d/1xGSPqS_OGq2mf1eNriGY3sCInVOk4G6FJ1q2CYWCUC0",
+    "https://docs.google.com/forms/d/18rfV1OOX3IqNpyc4JvkA9GWjHMiyoiA6B89tpch38w8",
+    "https://docs.google.com/forms/d/1NXZgmclp_-IS7cbGiNvLPcTOEnm2nmBaqi1h8xJvKRc",
+            ],
 };
 
 // AGGIUNGERE SE KEY NON ESISTE 404
