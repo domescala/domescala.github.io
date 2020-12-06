@@ -45,8 +45,35 @@ var link = {
         "https://docs.google.com/forms/d/1MhQQL8-E_Vi4q8VmfAj0UH4X5MxaXpD9tSjFshinc0c",
 
     ],    
+    // 2
+//gruppo 40
+"coltura_idroponica": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSct702lmfZXVdd0rr6AgWS-DaB-LdzFZbbm9R95auT6euiGTA",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeCI7r--XD9uSwdGducssShWtbQbZDZWFGnXiGqcw4yrN7ANA",
+    "https://docs.google.com/forms/d/e/1FAIpQLSd9SDubU4MDjr6JRttIO-PfkjRE328WUKgxVLOvPSnf9lIb0A",
+    "https://docs.google.com/forms/d/e/1FAIpQLScqgI5oWsKI7isRxHXUz6uO4JddsDXpMDa-wRk2CdNxK75-Lg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeQjAv2iwjDQmZo0ZANZENEJoElDFx2y7OuLCtw12rkP7kxBg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeiBGlniWgN_vJQ8UoZZYT-Q9J458xK8JiwX5MlcPL3eGCHVQ",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfIIgSoin32-loAHHtFiChAjPRefbuTDtkH6oPMcy9MavZA4Q",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeu5KRnLr82pfIBWLYqtK3242Q5ccAt6_2K49Su5qYgAqPuHQ",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfVi-3rShe5jaqWeHRAK6FaOlmefDIOme63M3aSrrc_Kffpww",
+    "https://docs.google.com/forms/d/e/1FAIpQLSctHpyv1rGMMcxS89sEcWnSTc-SIJES0SFnIXpC7tpN8waOHg",
+            ],
 
-        
+        // 3		
+//	Gruppo 23	
+"automobile_a_idrogeno": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSelEIqbBoL2L3boTKnxgz8mRwjqXRE2p_DjjjCeZHz7-XPTyA",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfQpDZj3Xwzy313-wCkKgH_u1pFIywL5QWmsVgFiiKaPNMA3A",
+    "https://docs.google.com/forms/d/e/1FAIpQLSff5JoUcEAa8gmVML2x8BWgRFZmv1njoshZF3LRlQoqEOWuMQ",
+    "https://docs.google.com/forms/d/e/1FAIpQLSc9FPUJKJ-yPywezxOEjzh40xEDBpjNuLuxtAMfonUw5_N8bw",
+    "https://docs.google.com/forms/d/e/1FAIpQLSewPt4OcRwsmRpuQHMscTqNqTIAsUQJwuEB6ntvIuzbLsXjsg",
+    "https://docs.google.com/forms/d/e/1FAIpQLScreUn3O5BR-BU4MEbhCQVNFa_zD46wVqPqbsVV7oRl-hlq0w",
+    "https://docs.google.com/forms/d/e/1FAIpQLScSTA5Hy5X536jFX_AlwLOlxUlKnxwqJO4lMKZf0JVxn_ZNxg",
+    "https://docs.google.com/forms/d/e/1FAIpQLScSTA5Hy5X536jFX_AlwLOlxUlKnxwqJO4lMKZf0JVxn_ZNxg",
+    "https://docs.google.com/forms/d/e/1FAIpQLScEuAYWPDKSwyjlihB9W6PuEnrTvJ_j7eMH75Qdap0q51eN8g",
+    "https://docs.google.com/forms/d/e/1FAIpQLScdhwIk76UQ9tOXN0urd4WuhrwoP_bfATnnO042tEhHzNaTZg",
+            ],
 };
 
 // AGGIUNGERE SE KEY NON ESISTE 404
@@ -221,11 +248,14 @@ function home() {
     for (let i = 0; i < Object.keys(link).length; i++) {
 
         var key = Object.keys(link)[i];
-        
+        const button = document.createElement("button"); 
+        button.id = toStrig(key);
         const a = document.createElement("A");   
         const p = document.createElement("P");  
         a.href = "?"+key;
-        p.innerHTML = key.replace(/_/gi, " ");                  
+        p.innerHTML = key.replace(/_/gi, " ");      
+
+        button.innerHTML = "risultati";                  
 
         document.body.appendChild(a).appendChild(p);
 
