@@ -100,7 +100,7 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSfw822dtkoOx-Dwv13BHQFHavDAnd48ERHzFGeAOwUcsZ9u1A",
     "https://docs.google.com/forms/d/e/1FAIpQLSdep0zsS7AqSHdRhZbVEa7Q4NjcBzo8Br6uFjTnaI_q9yoIeQ",
     "https://docs.google.com/forms/d/e/1FAIpQLSddoGbXQWq7aP010CC1L2COnXRCQJVFiC4nmXwy2Xyf5wklbA",
-    "https://docs.google.com/forms/d/187RfBohep4IW-932V885x8ciwzAOEtCRZ64LEIoNNdU/edit",
+    "https://docs.google.com/forms/d/187RfBohep4IW-932V885x8ciwzAOEtCRZ64LEIoNNdU",
             ],
 };
 
