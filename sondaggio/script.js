@@ -2,7 +2,7 @@ console.log("ciaone");
 var n_link = 0;
 var form_minore = 0;
 
-
+var index_form_minore = 0;
 var risposte = new Array();
 var url = document.URL;
 
@@ -60,8 +60,9 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSctHpyv1rGMMcxS89sEcWnSTc-SIJES0SFnIXpC7tpN8waOHg",
             ],
 
-        // 3
-//Gruppo 23
+
+            // 3		
+//	Gruppo 23	
 "automobile_a_idrogeno": [
     "https://docs.google.com/forms/d/e/1FAIpQLSelEIqbBoL2L3boTKnxgz8mRwjqXRE2p_DjjjCeZHz7-XPTyA",
     "https://docs.google.com/forms/d/e/1FAIpQLSfQpDZj3Xwzy313-wCkKgH_u1pFIywL5QWmsVgFiiKaPNMA3A",
@@ -70,7 +71,7 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSewPt4OcRwsmRpuQHMscTqNqTIAsUQJwuEB6ntvIuzbLsXjsg",
     "https://docs.google.com/forms/d/e/1FAIpQLScreUn3O5BR-BU4MEbhCQVNFa_zD46wVqPqbsVV7oRl-hlq0w",
     "https://docs.google.com/forms/d/e/1FAIpQLScSTA5Hy5X536jFX_AlwLOlxUlKnxwqJO4lMKZf0JVxn_ZNxg",
-    "https://docs.google.com/forms/d/e/1FAIpQLScSTA5Hy5X536jFX_AlwLOlxUlKnxwqJO4lMKZf0JVxn_ZNxg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSf0nxWAYxGtUBuQd4JHBfbpowQeRYQAIyFNBIyWtEfsRDFFqA",
     "https://docs.google.com/forms/d/e/1FAIpQLScEuAYWPDKSwyjlihB9W6PuEnrTvJ_j7eMH75Qdap0q51eN8g",
     "https://docs.google.com/forms/d/e/1FAIpQLScdhwIk76UQ9tOXN0urd4WuhrwoP_bfATnnO042tEhHzNaTZg",
             ],
@@ -302,16 +303,24 @@ function home() {
     for (let i = 0; i < Object.keys(link).length; i++) {
 
         var key = Object.keys(link)[i];
-        // const button = document.createElement("button"); 
-        // button.id = toStrig(key);
+        const button = document.createElement("BUTTON"); 
+        
         const a = document.createElement("A");   
-        const p = document.createElement("P");  
+        const p = document.createElement("P");
+        const div = document.createElement("DIV"); 
+
+
         a.href = "?"+key;
         p.innerHTML = key.replace(/_/gi, " ");      
+        p.style = "display: inline";
+        div.id = key;
+        button.innerHTML = "-";
+        button.style = "margin: 10px";
+        button.setAttribute("onclick",'richiesteHome("' + key + '")'); 
 
-        // button.innerHTML = "risultati";                  
 
-        document.body.appendChild(a).appendChild(p);
+        document.body.appendChild(div).appendChild(a).appendChild(p);
+        document.body.appendChild(div).appendChild(button);
 
 
     }
@@ -345,6 +354,69 @@ function nontrovato() {
 
 
 }
+
+
+// function richiesteHome(a) {
+    
+//     for (let i = 0; i < (link[a].length); i++) {
+//         var risultati = new Array(10);
+        
+//         $.ajaxSetup({
+//             scriptCharset: "utf-8", //or "ISO-8859-1",
+//             contentType: "application/json; charset=utf-8"
+//         });
+//         var linkanalitycs = link[a][i] + "/viewanalytics";
+//         $.getJSON("https://api.allorigins.win/get?url=" +
+//             encodeURIComponent(linkanalitycs) + "&callback=?",
+//             function (data) {
+
+//                 var c = $(data.contents).find("script")[0].innerHTML;
+//                 eval(c);
+//                 risultati[i] = ANALYTICS_LOAD_DATA_[5];
+
+//                 // console.log(i);
+
+//                 // console.log(risposte[i]);
+//                 console.log(checkHome(a, risultati));
+
+//                 if (checkHome(a, risultati)) {  // se l'array di risposte è pieno 
+//                    mostraRisposteHome(a, risultati);
+//                 }
+//             });
+
+
+//         ;
+
+
+//     }
+
+// }
+// function mostraRisposteHome(a,  risultati) {
+//     var miodiv = document.getElementById(a);
+//     var p = document.createElement("P");
+
+//     p.innerHTML = risultati;
+
+//     document.body.appendChild(miodiv).appendChild(p);
+    
+
+    
+
+// }
+
+
+// function checkHome(a, risultati) {
+
+
+//     for (let i = 0; i < risultati.length; i++) { // per ogni elemento controlla che non sia vuoto e che il numero di elementi sia al completo
+//         if ((Number.isInteger(risultati[i]) && risultati.length == link[a].length)) {
+            
+//             return true;
+//         }
+//         return false;
+
+//     }
+// }
 // function name() {
 //     //document.getElementsByClassName("freebirdFormviewerViewResponseLinksContainer")[0].hidden = true
 //     const stile = document.createElement("STYLE");
