@@ -88,6 +88,20 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSdnmdLax80N22fFHOihYe8Ig_0msi8wIRmGVdZhtDWUtClczg",
     "https://docs.google.com/forms/d/e/1FAIpQLSfNTy8eS_2em1YJbrIpn971FHeCZU18rJlUTBDvv45g8DoEQQ",
             ],
+            // 6		
+//	Gruppo 1	
+    "attività_in_quota": [
+    "https://docs.google.com/forms/d/e/1FAIpQLScmz6uI3jjXbZwHtmyo7DfaaAUpEFT1Nl6dupjhk-GjVy4big",
+    "https://docs.google.com/forms/d/e/1FAIpQLSezvz0k4CuOBgHUVOipi7W5OcrKkjHCkzLex2Mi_Wjd481K_A",
+    "https://docs.google.com/forms/d/e/1FAIpQLSew-858Wyi6ouqLVdHKfBUt19xaduaQGq7b2Ttm6vMR7K0lAA",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdpBdTjSCwt8jov8jMTiAnuHY87hhUIlzZeLK5Zpz18W30rjQ",
+    "https://docs.google.com/forms/d/e/1FAIpQLScoWe22cSEgEzMuLoiaDsr7IbjxobkL88CMxuvppwbLREpcbg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfm3HtthFS8m4fhTm3HJ3pu2TtqfJ5kOpcAkA01iPPujlgPRA",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfw822dtkoOx-Dwv13BHQFHavDAnd48ERHzFGeAOwUcsZ9u1A",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdep0zsS7AqSHdRhZbVEa7Q4NjcBzo8Br6uFjTnaI_q9yoIeQ",
+    "https://docs.google.com/forms/d/e/1FAIpQLSddoGbXQWq7aP010CC1L2COnXRCQJVFiC4nmXwy2Xyf5wklbA",
+    "https://docs.google.com/forms/d/187RfBohep4IW-932V885x8ciwzAOEtCRZ64LEIoNNdU/edit",
+            ],
 };
 
 // AGGIUNGERE SE KEY NON ESISTE 404
