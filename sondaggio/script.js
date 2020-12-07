@@ -61,8 +61,8 @@ var link = {
             ],
 
 
-            // 3		
-//	Gruppo 23	
+            // 3
+//Gruppo 23
 "automobile_a_idrogeno": [
     "https://docs.google.com/forms/d/e/1FAIpQLSelEIqbBoL2L3boTKnxgz8mRwjqXRE2p_DjjjCeZHz7-XPTyA",
     "https://docs.google.com/forms/d/e/1FAIpQLSfQpDZj3Xwzy313-wCkKgH_u1pFIywL5QWmsVgFiiKaPNMA3A",
@@ -89,8 +89,8 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSdnmdLax80N22fFHOihYe8Ig_0msi8wIRmGVdZhtDWUtClczg",
     "https://docs.google.com/forms/d/e/1FAIpQLSfNTy8eS_2em1YJbrIpn971FHeCZU18rJlUTBDvv45g8DoEQQ",
             ],
-            // 6		
-//	Gruppo 1	
+            // 6
+//Gruppo 1
     "attivita_in_quota": [
     "https://docs.google.com/forms/d/e/1FAIpQLScmz6uI3jjXbZwHtmyo7DfaaAUpEFT1Nl6dupjhk-GjVy4big",
     "https://docs.google.com/forms/d/e/1FAIpQLSezvz0k4CuOBgHUVOipi7W5OcrKkjHCkzLex2Mi_Wjd481K_A",
@@ -103,10 +103,10 @@ var link = {
     "https://docs.google.com/forms/d/e/1FAIpQLSddoGbXQWq7aP010CC1L2COnXRCQJVFiC4nmXwy2Xyf5wklbA",
     "https://docs.google.com/forms/d/187RfBohep4IW-932V885x8ciwzAOEtCRZ64LEIoNNdU",
             ],
-            // 7		
-//	gruppo 14	
-// 7		
-//	gruppo 14	
+            // 7
+//gruppo 14
+// 7
+//gruppo 14
 "etextile": [
     "https://docs.google.com/forms/d/1y8frgEwMY2xVeO99pglytUPWB1nHdAjmgaRI1gkyKqQ",
     "https://docs.google.com/forms/d/1847Y6lU0CmW-_YgoVXYt3Voz9vxqcGRuW5zGx1wh1nw",
@@ -118,6 +118,34 @@ var link = {
     "https://docs.google.com/forms/d/1xGSPqS_OGq2mf1eNriGY3sCInVOk4G6FJ1q2CYWCUC0",
     "https://docs.google.com/forms/d/18rfV1OOX3IqNpyc4JvkA9GWjHMiyoiA6B89tpch38w8",
     "https://docs.google.com/forms/d/1NXZgmclp_-IS7cbGiNvLPcTOEnm2nmBaqi1h8xJvKRc",
+            ],
+            // 8
+//gruppo 11
+"tappeti_ignifughi_ecosostenibili": [
+    "https://docs.google.com/forms/d/1aORUP22N_bH02hxMaoiDsKXzRWgiuYcd7NU7a6qXUUw",
+    "https://docs.google.com/forms/d/1dxqqlmJ3uGnVE2eeRzmIDVHFQyDs1RWQ6HCHuE8FMzw",
+    "https://docs.google.com/forms/d/1eiXcwG60spmtdCqso4PmCBaAwgCkS5UVGRH3m1As0QY",
+    "https://docs.google.com/forms/d/1U6u6MNQXEY9rWf4TrfAcyXdx0WfT_a91L1l5_L2RL-E",
+    "https://docs.google.com/forms/d/1m23VlIKSEvS7AKmCK5lzA7tx6LX00L6t7zl3Nm9uBog",
+    "https://docs.google.com/forms/d/1ExW_kRkf2yyBQAtBUlooK73x51KaqSenyIzlwtvG-q8",
+    "https://docs.google.com/forms/d/1NyA--aq-MrT-GQ9jno2mFSSHh6HDZTRwuy9r8vi5W9M",
+    "https://docs.google.com/forms/d/1oN6sKBSczqEX3Rwy-lSaumXOsMuQSVPCZVG_y2nxtQQ",
+    "https://docs.google.com/forms/d/1CmZg2gSsAoy2WGPO3raMiQzT_y_G1SnT8DkLicrR_VI",
+    "https://docs.google.com/forms/d/1UlGTuWGciqyfFOWUIk9EJXXVG_AacTMxpoSimbjSD1E",
+            ],
+  // 9
+//gruppo 7
+"suola_in_stampa_3d_fdm": [
+    "https://docs.google.com/forms/d/179JyRFyEEbLflVu-YoG6ZYUDdl5x2mSKQ5ek3tJuCIc",
+    "https://docs.google.com/forms/d/1WF_L_BcYUAFOQneY-tXvJ5nCTClESEyJIvP5c8eDKyA",
+    "https://docs.google.com/forms/d/1ujhX5t4_a_iHFAM0BwZrkC_Bs5DWficDT8hmnkMrKyw",
+    "https://docs.google.com/forms/d/1lzLBeIe5FGnJHo3McV3MRYt0P2IOX-wvMfvgv6T7JKc",
+    "https://docs.google.com/forms/d/1K6hQIOCqZLmTolch4hFMUfhhjNbRvEoybnp8eVIYiY4",
+    "https://docs.google.com/forms/d/12WUQVQXtm1o0QBe04KGnIPybwxSFNjIimayF8Kl29Kw",
+    "https://docs.google.com/forms/d/19FAeZWQ4Aqs_A23IkEHK726fDWGFLF4thDeXYTISCMk",
+    "https://docs.google.com/forms/d/1yGQ3kjwsFhLTg9tUZwvAoLhY1Mc3Aj0MUUbQhPlzS9E",
+    "https://docs.google.com/forms/d/15YX8xQq7Bazjdtwp_pTnliodquRykoh1t2z2n6RYWcQ",
+    "https://docs.google.com/forms/d/1DOLWs_A-1wssmaN8yA7slJ0E2dw4VGdSHCSVnaBHghs",
             ],
 };
 
