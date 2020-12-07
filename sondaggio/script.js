@@ -147,10 +147,22 @@ var link = {
     "https://docs.google.com/forms/d/15YX8xQq7Bazjdtwp_pTnliodquRykoh1t2z2n6RYWcQ",
     "https://docs.google.com/forms/d/1DOLWs_A-1wssmaN8yA7slJ0E2dw4VGdSHCSVnaBHghs",
             ],
+            // 10
+//gruppo 16
+"stampe_e_pannelli_fotocatalitici": [
+    "https://docs.google.com/forms/d/13PJvmyaKW1j5_l0IvgwG-iNsOLjEM7Qhpap5IAFSR70",
+    "https://docs.google.com/forms/d/12IsRC38UoXEyq_sTYrVTF5im0vVv17eXBXRMjJhEleI",
+    "https://docs.google.com/forms/d/19cAH3IHvY3RcYg3-JlzEKSVwiDZcS3uyR6UiHi0uzC8",
+    "https://docs.google.com/forms/d/1ui_QZfVpkZH1pJPcFBtPTsTN1Gegnzo8CauYpfD1oQM",
+    "https://docs.google.com/forms/d/18fszPJ6Zj9yCfx27EI1EIs8Fn4K__GDcqPqooqCZZ_0",
+    "https://docs.google.com/forms/d/1TwrAzBSQ3jrHCa4XDsPkMeuETajTpgsfZiT4p-BZ4fo",
+    "https://docs.google.com/forms/d/1D_buKFd0sVA_jYezna6mxu1MEcyiGZk1XuVq2RKdYEU",
+    "https://docs.google.com/forms/d/1sVR4-ew7Gz2JwDsj5t7-qGasRggtZGr_iicjRxlhYlo",
+    "https://docs.google.com/forms/d/12GkkBQE8N5ngWzoZCjd-6QtYG_N0LiA7h7q1-4lJGqI",
+    "https://docs.google.com/forms/u/3/d/1YUuC9VpQX-gRMm8Ta8-LkfEJopS2gMez7qNblr-Bb44",
+            ],
 };
 
-// AGGIUNGERE SE KEY NON ESISTE 404
-// ordinare file
 
 
 
