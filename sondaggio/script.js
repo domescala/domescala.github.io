@@ -418,25 +418,35 @@ function home() {
         
         const a = document.createElement("A");   
         const p = document.createElement("P");
-        const div = document.createElement("DIV"); 
+        const div1 = document.createElement("DIV"); 
         // const p2 = document.createElement("P");
+        const anullo = document.createElement("A");   
+
+        const div2 = document.createElement("DIV"); 
 
 
         a.href = "?"+key;
         p.innerHTML = key.replace(/_/gi, " ");      
-        p.style = "display: inline";
+        p.style = "display: inline; margin-top: 10px";
+        anullo.id = "somma"+key;
+
         // p2.id = key;
-        button.innerHTML = "-";
+        div1.id = "div1_"+key;
+        div2.id = "div2_"+key;
+        button.innerHTML = "v";
         button.style = "margin: 10px";
-        button.setAttribute("onclick",'richiesteHome("' + key + '")'); 
+        button.setAttribute("onclick",'richiesteHome("' + key + '",this)'); 
         // p2.innerHTML = "0";
-        // p2["hidden"] = "true"; 
+        // p2["hidden"] = "true";
+        anullo.innerHTML = "";
+        anullo["hidden"] = "true";
 
 
-        document.body.appendChild(div).appendChild(a).appendChild(p);
-        document.body.appendChild(div).appendChild(button);
-        // document.body.appendChild(div).appendChild(document.createElement("BR"));    
-        // document.body.appendChild(div).appendChild(p2);
+        document.body.appendChild(div1).appendChild(a).appendChild(p);
+        document.body.appendChild(div1).appendChild(button);
+        document.body.appendChild(div1).appendChild(document.createElement("BR"));    
+        // document.body.appendChild(div1).appendChild(p2);
+        document.body.appendChild(div1).appendChild(div2).appendChild(anullo)
 
 
     }
@@ -472,67 +482,89 @@ function nontrovato() {
 }
 
 
-// function richiesteHome(a) {
-//     var risultati = new Array(10);
-//     for (let i = 0; i < (link[a].length); i++) {
+function richiesteHome(a,b) {
+    var risultati = new Array(10);
+    console.log(b);
+    for (let i = 0; i < (link[a].length); i++) {
 
         
-//         $.ajaxSetup({
-//             scriptCharset: "utf-8", //or "ISO-8859-1",
-//             contentType: "application/json; charset=utf-8"
-//         });
-//         var linkanalitycs = link[a][i] + "/viewanalytics";
-//         $.getJSON("https://api.allorigins.win/get?url=" +
-//             encodeURIComponent(linkanalitycs) + "&callback=?",
-//             function (data) {
+        $.ajaxSetup({
+            scriptCharset: "utf-8", //or "ISO-8859-1",
+            contentType: "application/json; charset=utf-8"
+        });
+        var linkanalitycs = link[a][i] + "/viewanalytics";
+        $.getJSON("https://api.allorigins.win/get?url=" +
+            encodeURIComponent(linkanalitycs) + "&callback=?",
+            function (data) {
 
-//                 var c = $(data.contents).find("script")[0].innerHTML;
-//                 eval(c);
-//                 risultati[i] = ANALYTICS_LOAD_DATA_[5];
+                var c = $(data.contents).find("script")[0].innerHTML;
+                eval(c);
+                risultati[i] = ANALYTICS_LOAD_DATA_[5];
 
-//                 // console.log(i);
+                // console.log(i);
 
-//                 // console.log(risposte[i]);
-//                 console.log(checkHome(a, risultati));
+                // console.log(risposte[i]);
+                console.log(checkHome(a, risultati));
 
-//                 if (checkHome(a, risultati)) {  // se l'array di risposte è pieno 
-//                    mostraRisposteHome(a, risultati);
-//                 }
-//             });
+                const a1 = document.createElement("A");
+                const div1 = document.getElementById("div1_"+a);
+                const div2 = document.getElementById("div2_"+a);
+
+                div2.style["margin"] = "10px";
+                a1.href = link[a][i] + "/viewform";
+                a1.style["margin"] = "10px";
+                a1.innerHTML = risultati[i];
+                div1.appendChild(div2).appendChild(a1);
 
 
-//         ;
+                if (checkHome(a, risultati)) {  // se l'array di risposte è pieno 
+                   mostraRisposteHome(a, risultati, b);
+                }
+            });
 
 
-//     }
+        ;
 
-// }
-// function mostraRisposteHome(a,  risultati) {
-//     var miodiv = document.getElementById(a);
-//     var p = document.createElement("P");
 
-//     p.innerHTML = risultati;
+    }
 
-//     document.body.appendChild(miodiv).appendChild(p);
+}
+function mostraRisposteHome(a,  risultati, b) {
+    // var miopara = document.getElementById(a);
+    // var p = document.createElement("P");
+
+    // miopara.innerHTML = risultati;
+    // miopara["hidden"] = false;
+    var somma  = 0;
+    for (let i = 0; i < risultati.length; i++) {
+        somma += risultati[i];
+        
+    }
+    document.getElementById("somma"+a).innerHTML = "totale: "+ somma;
+    document.getElementById("somma"+a).removeAttribute("hidden");
+    document.getElementById("somma"+a).style= "margin: 10px;"
+    b.style["opacity"] = 0;
+
+    // document.body.appendChild(miodiv).appendChild(p);
     
 
     
 
-// }
+}
 
 
-// function checkHome(a, risultati) {
+function checkHome(a, risultati) {
 
 
-//     for (let i = 0; i < risultati.length; i++) { // per ogni elemento controlla che non sia vuoto e che il numero di elementi sia al completo
-//         if ((Number.isInteger(risultati[i]) && risultati.length == link[a].length)) {
+    for (let i = 0; i < risultati.length; i++) { // per ogni elemento controlla che non sia vuoto e che il numero di elementi sia al completo
+        if ((Number.isInteger(risultati[i]) && risultati.length == link[a].length)) {
             
-//             return true;
-//         }
-//         return false;
+            return true;
+        }
+        return false;
 
-//     }
-// }
+    }
+}
 // function name() {
 //     //document.getElementsByClassName("freebirdFormviewerViewResponseLinksContainer")[0].hidden = true
 //     const stile = document.createElement("STYLE");
