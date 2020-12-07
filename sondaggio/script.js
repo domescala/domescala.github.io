@@ -173,6 +173,16 @@ var link = {
 
 function f() {
 
+
+
+    const frame = document.createElement("IFRAME");   // Create a <button> element
+    frame.id="form" ;
+    document.body.appendChild(frame);
+    // frame.style["opacity"] = 0;
+    frame.style["height"] = "0px";
+
+
+
     //  altezza = window.screen.height;
 
     if (key && !link[key]) {        // se key è definita && link[key] è indefinita  = se key esiste ma non c'è nell'elenco
@@ -242,18 +252,18 @@ function mostra_form() {
     
     // console.log(altezza);
 
-    const frame = document.createElement("IFRAME");   // Create a <button> element
-    frame.id="form" ;
-    frame.width="100%" ;
+    
+    
+    document.getElementById("form").width="100%" ;
     // frame.style.height="-webkit-fill-available" ;
     // frame.style.height="fill-available" ;
     // frame.style.height="-moz-available" ;
-    frame.frameborder="0" ;
-    frame.marginheight="0" ;
-    frame.marginwidth="0";
+    document.getElementById("form").frameborder="0" ;
+    document.getElementById("form").marginheight="0" ;
+    document.getElementById("form").marginwidth="0";
     // frame.hidden = true;
 
-    document.body.appendChild(frame);
+    
 
     index_form_minore = minore(risposte);
 
@@ -263,13 +273,18 @@ function mostra_form() {
 
     // console.log("altezza:" + altezza);
 
-    frame.style.height= "5000px";
+    document.getElementById("form").style.height= ($(window).height() - 10) + "px"; // setto l'altezza del frame uguale all'altezza dello schermo
     
 
     document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
     // document.getElementById("form").style["height"] = "-webkit-fill-available";
     
     document.getElementById("idbody").style.animation = "none";
+    // document.getElementById("form").style["opacity"] = 1 ;
+ 
+ 
+ 
+
     // console.log(risposte);
     // setTimeout(() => {
     //    var sommarisposte = 0;
