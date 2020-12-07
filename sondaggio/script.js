@@ -189,6 +189,34 @@ var link = {
     "https://docs.google.com/forms/d/1GPMhLXpPRTqE_AMl30thhI_Xx_stdWF_U-u_L5C4wZE",
     "https://docs.google.com/forms/d/10P96YHS54cQYOwS705l7UJbVuQ-vIWdCZRBgcoKNpwk",
             ],
+            // 5
+//Gruppo 17 
+"coltelli_da_cucina_in_dlc": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSdTwzk-1-GVi16i1Ix12LuoZs_LGmfgByFtova69A00Je6XRw",
+    "https://docs.google.com/forms/d/e/1FAIpQLSerTeo1DMPnw2YNxwTdTzk0aVKnSuR0GcZh_ghjLC0vad-vGA",
+    "https://docs.google.com/forms/d/e/1FAIpQLScNHGYSqNcl3rzXLb2qtOOE1qURoQVfY_hvBRt3FASsioCdyg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSc5HD2LLTZfAIw4H6BDF50regpCMkRMrjiHKZAl9mS8y32oCg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdNCRlYmZB0wWBc45eWlw7isQrPiz8x2HIjsQUPR4olgAltXg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfF0TPEpTK9K9r8ysYBAWUBAdarMU5jKWMqL6RKa7SyDhP7rg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfFDNU6w0-HjfS720qPoQ_lwZzosSRvOLNapNvu1-80GT-7Rg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfFDNU6w0-HjfS720qPoQ_lwZzosSRvOLNapNvu1-80GT-7Rg",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdLOKARGhtwA-gYodLpjR2n4G3aHSWfqLJuhpI--EUBdxRjBw",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeg1943az_-WnaYw_eznADSeqhxohZtkNBGOvUwyI667bBZsg",
+            ],
+            // 14
+//gruppo 14 ( il precedente gruppo si sarà sbagliato con design3 mi sa ) 
+"app_visite_mediche_e_trasporti": [
+    "https://docs.google.com/forms/d/1ofqdbNLqnrGZJSdQUMHqift-fFcTYZxi44ven5Z8WXw",
+    "https://docs.google.com/forms/d/1KFYNDbLVA12iO_WjhDnv8_3LfZuIgKlfTjAJ3yO1yMk",
+    "https://docs.google.com/forms/d/1huIzkH1iHzlsyEOo4PDux9xCx8jZhv4wUmC3A1uEO7o",
+    "https://docs.google.com/forms/d/1AQs21UdwNE7-bqvZgCdAPh0FzDOcSdTH2h6ypS4pYLw",
+    "https://docs.google.com/forms/d/1ia6iv0UqklGBdfEoZZibXl3_DKFTE3cd3aO1aQ6B-jc",
+    "https://docs.google.com/forms/d/12HTQM8C9w7lUd9f1DBSBAMVDas1Uu1_-lcdlPMX9NEE",
+    "https://docs.google.com/forms/d/1sBF9OITitrZIaiXEl9Vf80TJzNdW9A7lN5Szy8XXGPk",
+    "https://docs.google.com/forms/d/1KNBF933PTEDt2OkudDQdx8HePZn806YMufqgAe5S4tI",
+    "https://docs.google.com/forms/d/1pqd3RRY6cDM63eDiHap2cY57vrIOmrvMVlstWsyiEcs",
+    "https://docs.google.com/forms/d/12pjYOi_rFQ9EpoT4KhE9_vL36HUQCUwquC8F7S3TBIU",
+            ],
 };
 
 
@@ -391,19 +419,24 @@ function home() {
         const a = document.createElement("A");   
         const p = document.createElement("P");
         const div = document.createElement("DIV"); 
+        // const p2 = document.createElement("P");
 
 
         a.href = "?"+key;
         p.innerHTML = key.replace(/_/gi, " ");      
         p.style = "display: inline";
-        div.id = key;
+        // p2.id = key;
         button.innerHTML = "-";
         button.style = "margin: 10px";
         button.setAttribute("onclick",'richiesteHome("' + key + '")'); 
+        // p2.innerHTML = "0";
+        // p2["hidden"] = "true"; 
 
 
         document.body.appendChild(div).appendChild(a).appendChild(p);
         document.body.appendChild(div).appendChild(button);
+        // document.body.appendChild(div).appendChild(document.createElement("BR"));    
+        // document.body.appendChild(div).appendChild(p2);
 
 
     }
@@ -440,9 +473,9 @@ function nontrovato() {
 
 
 // function richiesteHome(a) {
-    
+//     var risultati = new Array(10);
 //     for (let i = 0; i < (link[a].length); i++) {
-//         var risultati = new Array(10);
+
         
 //         $.ajaxSetup({
 //             scriptCharset: "utf-8", //or "ISO-8859-1",
