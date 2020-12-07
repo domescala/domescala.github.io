@@ -175,6 +175,20 @@ var link = {
     "https://docs.google.com/forms/d/1EnHSgxxii51OP665l7M2-VG6RYga0A1AA3eKZr6wxnY",
     "https://docs.google.com/forms/d/1DkpctWSQVSjtpQQw3lPtgYPnwXDW_0gxIr7_tm4RVs8",
             ],
+            // 12
+//gruppo44
+"borse_in_micelio": [
+    "https://docs.google.com/forms/d/1nD0Omd22L4p3QCGCFEj6pW6HIqvh6kvI6G7Jv05xtfo",
+    "https://docs.google.com/forms/d/1_4nm_ycxZ1ZJbrBTEcKIhhptwHvLTDiVmXs5g2b8Qb0",
+    "https://docs.google.com/forms/d/1S1mljAWr75ENKsnpbVUMdGYErHO7A5Vz91pY3Cjjilw",
+    "https://docs.google.com/forms/d/1FVMQIeHUCpvAauKqzQ2bE0VOnaPDGBj3K5S7YZHlsTQ",
+    "https://docs.google.com/forms/d/1CbbBhqzkjqGfSftZO3p517r3VzzX4cK5iPzPDZ4l3C8",
+    "https://docs.google.com/forms/d/1LLrFWe7ZC80qBq920AVDZMDXbzmtlEm-Z68Y1XvWBJI",
+    "https://docs.google.com/forms/d/1iBPZxXdLxpIq89GqGFmxfhZCw3fQW9ApMZpDfqyg5fY",
+    "https://docs.google.com/forms/d/1phFAKdB9-CDIwTgGrCR-YiteAtbcauEeB8iofl9EUAk",
+    "https://docs.google.com/forms/d/1GPMhLXpPRTqE_AMl30thhI_Xx_stdWF_U-u_L5C4wZE",
+    "https://docs.google.com/forms/d/10P96YHS54cQYOwS705l7UJbVuQ-vIWdCZRBgcoKNpwk",
+            ],
 };
 
 
