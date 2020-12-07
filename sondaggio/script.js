@@ -161,6 +161,20 @@ var link = {
     "https://docs.google.com/forms/d/12GkkBQE8N5ngWzoZCjd-6QtYG_N0LiA7h7q1-4lJGqI",
     "https://docs.google.com/forms/u/3/d/1YUuC9VpQX-gRMm8Ta8-LkfEJopS2gMez7qNblr-Bb44",
             ],
+            // 11
+//note
+"virtual_fitting": [
+    "https://docs.google.com/forms/d/1vYo13CJw9eUAUAdZZjBYUR_5_yAktRQPpigTLIv68O4",
+    "https://docs.google.com/forms/d/1c2bk7vyMDNDwTwYnoLXilpgntOEp0ZuaWibLNez5OcE",
+    "https://docs.google.com/forms/d/1GMycyTjOROwhsp1rkyRdQGAv86H4jq5IxezrGSFhSoA",
+    "https://docs.google.com/forms/d/174P2qyhj2DaToGw6QPQhi4fMLS27M7c85lnD7QAtyfE",
+    "https://docs.google.com/forms/d/1JZamq13Vur-xfNMkkEx47FEJ6S_vKZqeq6FleXBjWdY",
+    "https://docs.google.com/forms/d/1HSHI-r9rmSjjS4hGTqYXyazUdhtxYMcDU7C3HRgOhB0",
+    "https://docs.google.com/forms/d/18Go2wAqcsGdLnuT9C81FTHNe3SIOQdUqg5QHbG4UERQ",
+    "https://docs.google.com/forms/d/1epayiWXQuUwLiQVHtM7p1oGp2LdOwTK8zHdfWaP4O4w",
+    "https://docs.google.com/forms/d/1EnHSgxxii51OP665l7M2-VG6RYga0A1AA3eKZr6wxnY",
+    "https://docs.google.com/forms/d/1DkpctWSQVSjtpQQw3lPtgYPnwXDW_0gxIr7_tm4RVs8",
+            ],
 };
 
 
