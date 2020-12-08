@@ -447,14 +447,24 @@ function home() {
 
         document.body.appendChild(div1).appendChild(a).appendChild(p);
         document.body.appendChild(div1).appendChild(button);
-        document.body.appendChild(div1).appendChild(document.createElement("BR"));    
         // document.body.appendChild(div1).appendChild(p2);
         document.body.appendChild(div1).appendChild(div2).appendChild(anullo);
+        document.body.appendChild(document.createElement("BR"));
+        
 
 
     }
+    document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
+
 }
 function nontrovato() {
+    document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
     document.body.appendChild(document.createElement("BR"));
     const h2 = document.createElement("H2"); 
     const a = document.createElement("A");   
