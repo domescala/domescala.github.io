@@ -217,6 +217,48 @@ var link = {
     "https://docs.google.com/forms/d/1pqd3RRY6cDM63eDiHap2cY57vrIOmrvMVlstWsyiEcs",
     "https://docs.google.com/forms/d/12pjYOi_rFQ9EpoT4KhE9_vL36HUQCUwquC8F7S3TBIU",
             ],
+            // 13
+//Gruppo 20
+"piattaforma_team_building": [
+    "https://docs.google.com/forms/d/1T4dx2ndepYIVSrgw_PyZmoApkZbVEhLWJMG-oisyp2Q",
+    "https://docs.google.com/forms/d/13KIjeTuMDlJl0eSkLS-sjZ6PwLaBRmVi08HBB6IYqFo",
+    "https://docs.google.com/forms/d/1BpdTKfQDG1qa5ntLZzIvUptpl5GT5FWqHY6OheSNGOY",
+    "https://docs.google.com/forms/d/1wC0KAH9hh_aYzhe_yMTwv1VdM4BjC36R5pKODRFxRgk",
+    "https://docs.google.com/forms/d/1Cius7bVX2ainjl5Sx3RyD-BvB4A2LKowJ_mN2LmyEVE",
+    "https://docs.google.com/forms/d/1REsQcRxwsNJcmGK88Ome1Kb28OANVysMD4EKHMjtzTM",
+    "https://docs.google.com/forms/d/1cy2ZKAqmsnv34FeLtHP5ZbdinqPHTF58y2SH_IPCKiI",
+    "https://docs.google.com/forms/d/1RJa6Si6Irm7u3o-qeHZ4E2UJsZ1PPQicmwwAkA0obQE",
+    "https://docs.google.com/forms/d/1zED0L6GmKrXclBR87efNs2P9Tnzdre6fnZSV_BpS96o",
+    "https://docs.google.com/forms/d/1sxmqP8w_i4u-RZkVBbO9TyZ-cDGrnC-M7x3DxDgG-AU",
+            ],
+            // 15
+//gruppo 26
+"carrello_intelligente": [
+    "https://docs.google.com/forms/d/1DYBIz1nTCpqTM0pQnj__rQLLcvPDhnqrN42zt1NSAFs",
+    "https://docs.google.com/forms/d/1iCVVj-7dUOs3u_1o7ZAjlZmhvvxG2Cwv-qM8Lv2TCDE",
+    "https://docs.google.com/forms/d/17oJ4BxCeYokKcMogrQTlSUDraBXy_ts7ZNsPD7i7qzY",
+    "https://docs.google.com/forms/d/1qpXfD19JoV2Uou76629C5D2G9nn1SYEpYI3IQVNeo4c",
+    "https://docs.google.com/forms/d/1QQuviUGETOtx0BrsiJQLJ64CrkQwtzp06o-xBy-qqhY",
+    "https://docs.google.com/forms/d/1IPaMlWLuUwaU2KNpBzsXVrsFiYuTKnZH8HFSde62XZg",
+    "https://docs.google.com/forms/d/1uo3OXVg-CgfWpy5kks8oaQFRl7zhppuxj-KzdixbJwA",
+    "https://docs.google.com/forms/d/129T439eU_uQgHhSmikGNk1wVNbs4l8G8GkUIFpIxaK0",
+    "https://docs.google.com/forms/d/11m_tMSKsgAWFOc29G87xgDhrxz1HiT-97o9umqz_EIY",
+    "https://docs.google.com/forms/d/1IQxyjEcCqfmM-EDbkbPDutZfwgu324oGkkundJ8r0cE",
+            ],
+    // 16
+    //gruppo 6
+    "maglietta_sostenibile": [
+    "https://docs.google.com/forms/d/1wb6UnCQO_lqSL4jOFyB9uabaFDoQ5jDBg0BjW7Qp8bM",
+    "https://docs.google.com/forms/d/1tcA0PhOehfdIwSE0Wcs8kdRDakJQjHfBJYtVgyzF2pE",
+    "https://docs.google.com/forms/d/1DnSKQBFZjmGgAaBgyW-e5BtwdlCqfUrj_MSMwsRNWig",
+    "https://docs.google.com/forms/d/14w6OSzDQ4A5BgcPV8tOqnRzd8SAuXdKgnxNtkbCA0R4",
+    "https://docs.google.com/forms/d/1VfVUg5VvaV5HEuAcHKv68_4X76qfZJasd3Vodwb0M9U",
+    "https://docs.google.com/forms/d/1Asz2dYL8ub71k-KWB5HKipaT66zwpsLaOCxeZoHPHEY",
+    "https://docs.google.com/forms/d/1y_GR1uSXILOaJgUCBaGKKxNIkrNPoyfP7lRap9G43WY",
+    "https://docs.google.com/forms/d/10PTsyrQFs8NintImqCdq3WSMYLAYyTpzV_FoOsFnG-w",
+    "https://docs.google.com/forms/d/1KgGWYsIkPWL4DM3xlAzoOgCeJu-e0azEPhwcZwcImQk",
+    "https://docs.google.com/forms/d/1lagH9LVQrjNciJHuboT6KvWEKfgR6s5ULxCXTaiJPE8",
+            ],
 };
 
 
