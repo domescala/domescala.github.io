@@ -71,7 +71,7 @@ p{
 a{
 
 	text-decoration: none;
-	font-family: 'Roboto Mono', monospace;; 
+	font-family: 'Roboto Mono', monospace;
 	
     
 }
@@ -87,10 +87,7 @@ h2{
     font-weight: 600;
     margin: 20px;
 }
-div.freebirdFormviewerViewResponseLinksContainer{
-	visibility: hidden;
-	opacity: 0;
-}
+
 body{
 	animation: intro 1s ease-in-out alternate infinite;
 

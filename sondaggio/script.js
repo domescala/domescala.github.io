@@ -433,6 +433,9 @@ function home() {
         // p2.id = key;
         div1.id = "div1_"+key;
         div2.id = "div2_"+key;
+        // div2.style["margin-top"] = "0px";
+        div2.style["line-height"] = "1.5";
+        div2.style["line-break"] = "anywhere";
         button.innerHTML = "v";
         button.style = "margin: 10px";
         button.setAttribute("onclick",'richiesteHome("' + key + '",this)'); 
@@ -446,7 +449,7 @@ function home() {
         document.body.appendChild(div1).appendChild(button);
         document.body.appendChild(div1).appendChild(document.createElement("BR"));    
         // document.body.appendChild(div1).appendChild(p2);
-        document.body.appendChild(div1).appendChild(div2).appendChild(anullo)
+        document.body.appendChild(div1).appendChild(div2).appendChild(anullo);
 
 
     }
