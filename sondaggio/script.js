@@ -446,11 +446,20 @@ function check() {
 }
 
 function home() {
-    const h1 = document.createElement("H1"); 
+    const h1 = document.createElement("H1");
+    const messaggio = document.createElement("P");
+    const div_messaggio = document.createElement("DIV");
+    messaggio.innerHTML = "Premendo sul pulsante di fianco al link compariranno i risultati dei sondaggi (se si preme poi sui singoli numeri si viene reindirizzati al sondaggio in questione";
+    messaggio.style["margin"] = "0px"
+    div_messaggio.style["margin"]="20px";
     h1.innerHTML = "Elenco sondaggi";
     document.body.appendChild(h1);
     document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(div_messaggio).appendChild(messaggio);
     document.body.appendChild(document.createElement("BR"));
+    document.body.appendChild(document.createElement("BR"));
+
+
 
 
     for (let i = 0; i < Object.keys(link).length; i++) {
