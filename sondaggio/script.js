@@ -343,6 +343,49 @@ var link = {
     "https://docs.google.com/forms/d/1jp6z3dt0N-65pMV78kHC2xe1ePt8_5QuAtLzWw4iQkU",
     "https://docs.google.com/forms/d/1StPn-WyljDA7pMHq8-og_X4EIIH2mwAl5-_AE9ZWsbY",
             ],
+
+            // 23
+//Gruppo 3 (1)
+"smart_speaker_per_una_didattica_intelligente_studenti": [
+    "https://docs.google.com/forms/d/1hjtZccM0nOjLIuxVmJLXR5JAUugnA-8CRrfYYmd-xLY",
+    "https://docs.google.com/forms/d/1OFYuwS6e_kBVR4y30nW6lIEaNR8eDo_TtuCAp8USxy4",
+    "https://docs.google.com/forms/d/1mamlCd6x5973fFKXPXERXUKmDgn-9V1YNwBDF7d9gOY",
+    "https://docs.google.com/forms/d/1sRinw-MmQayAAz1MxK9YjN7ydiGeAKqCydLI0gP9CzQ",
+    "https://docs.google.com/forms/d/14nXw23aGcSGQDkEWDQYBgMYwDUgh2VcWbnYu2oJOZ9Y",
+    "https://docs.google.com/forms/d/1PIZNdMnMHaLHM3mPYtPyI3ZDFtW-WNd6gnrNpeVzRSY",
+    "https://docs.google.com/forms/d/1NCNREJrSKyUTZimLms3GNqIPFrEAPvQF4eDqogRduFE",
+    "https://docs.google.com/forms/d/1kZbiAGJGq7GQfNVy62Bap1DQuNvvlt_UbGqx0XGJdLk",
+    "https://docs.google.com/forms/d/1YGobf6StVDWhULP4OIv1OKrgl927X65WHRNs1P5rcm4",
+    "https://docs.google.com/forms/d/1e5dWtxVvnGJtJe3UfWRcyNIV7w2n5kHEpHZsM4zCJig",
+            ],
+    // 24
+    //Gruppo 22
+    "pavimentazione_da_scarti": [
+    "https://docs.google.com/forms/d/1Gn_zrbTirGK4KBP5YhFf8Vn7Y2pLSZc7oxMn9XWBHvI",
+    "https://docs.google.com/forms/d/1KzyvODCNjv2cecLJROYkqz9jLH_cXvHR4Men3YWdEJg",
+    "https://docs.google.com/forms/d/13nyqcTZGWDtbO1bzNUqgnh4sjzexB65wy6uNL7Nlyg8",
+    "https://docs.google.com/forms/d/1P9vd9c7J95eZCpi5e0I3hXZd327Cw4wZ0kamlcvxHOc",
+    "https://docs.google.com/forms/d/1R9ls8XUicwfEeud-Hi6zBlQMuzQUKSIyhDiVnfSbz2o",
+    "https://docs.google.com/forms/d/1Wkru5t1TpvxydN4qw_thF4ACC1S7fbsO48xG1VjMoLY",
+    "https://docs.google.com/forms/d/1ek5M8A5ME45175ZTAIgsNSyWIa-kIoq5oS9PzdcfToU",
+    "https://docs.google.com/forms/d/1TjY4gHlDFyv5tS0e6G1KBPlNihXfsY182RFdP22nW_s",
+    "https://docs.google.com/forms/d/1nW-dXNQNvntE5JvFj4Wpk45XXiM8t-AhUuC6mXk3zJw",
+    "https://docs.google.com/forms/d/1njLI49emjceOsO6KibQZjlu_AXxDrS-UwiE6GTvQt28",
+            ],
+            // 25
+//Gruppo 21
+"sacco_a_pelo": [
+    "https://docs.google.com/forms/d/1WjvUgS_UD93HBsyPpb7Q0CKwUfU-qzBoEaL9MXe1JMM",
+    "https://docs.google.com/forms/d/1iXCYIx70zoss5-3tF_wtuowd_40qHPiL1C2nih13uR8",
+    "https://docs.google.com/forms/d/1lz1AJMShZhgVojsZh8GZxtfP7ITIPJdy0RlxJbVBjlc",
+    "https://docs.google.com/forms/d/1U-sQDBVIENpFo9p9MSUaCJaHBLCeP4n7TVUocWX3oKk",
+    "https://docs.google.com/forms/d/1V31UDE48GHvsi1lFaJMN1EEFSg1Ea1TOivnqkOfZ4qs",
+    "https://docs.google.com/forms/d/1fSF1v-KKUpux_ceVvl5mt04VpZxWdAG9cZ2g6pC0_RY",
+    "https://docs.google.com/forms/d/1PVWKx85kgSJFIVOwG6rEMTbuJbFu3w62K4MnO6zhMxo",
+    "https://docs.google.com/forms/d/1e8YeGfbiv08K_G4YeGpWTqNaus5xjpy8Jg7sKS_Burg",
+    "https://docs.google.com/forms/d/1DnEWYm9YAjnsudF-g6GQt7Ko8MBC0A1Hch_BEuE95pE",
+    "https://docs.google.com/forms/d/1MKp7e5ZyyZ4PdQuxK2DJ-i2cfSNWvTNbyCfhip4beOk",
+            ],
 };
 
 
