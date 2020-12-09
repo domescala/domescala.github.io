@@ -259,6 +259,62 @@ var link = {
     "https://docs.google.com/forms/d/1KgGWYsIkPWL4DM3xlAzoOgCeJu-e0azEPhwcZwcImQk",
     "https://docs.google.com/forms/d/1lagH9LVQrjNciJHuboT6KvWEKfgR6s5ULxCXTaiJPE8",
             ],
+            // 17
+//gruppo 35
+"dpi_auxetici": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSfF_Ab2MwxXqm-bQlbiniB-RieFOL-aMdfUnOHT8wsLNIOTsg",
+    "https://docs.google.com/forms/d/e/1FAIpQLScbnIlruLZFlDcP-wbc5neQlbDTNzj9JTUgXVqBP3OIic07Tw",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfg3zdtuDwCRPVI0vzK8CsTIDwu7BFxlFfAIuAr6rEJWo7X8g",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdD_Zk1bb7Z6Rt0WWKP7QaN0Jg1t_OIhvaEs3nxwJZ0xVOb1A",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfNIo1kHSNV_nBtLxV3mrShYFeOZLvREwXRRVKz1Ljz5CZhiw",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfmjMmg0iBsMfg2kXrC28NaXMI5s2q8I1Lb9Zq4akVsR2gg4Q",
+    "https://docs.google.com/forms/d/e/1FAIpQLSe5jrReKw_V8WDnWZUmRdfFanY2vPnXOrJkzu058RELbgqPVA",
+    "https://docs.google.com/forms/d/e/1FAIpQLScG2stHMfLDZP-LKhxyDTX1sVNJbLxgrVv2pvD-FvzTVKc2Vw",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdlMkQQzpUmj8JheUVdJnVW44S3J3i6FugycGtxY7jFfB4PBA",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdoQ9totjaS6MDoTiV92JwRHYGGszNsx2CCta2WPEhIbiEwMg",
+            ],
+    // 18
+    //gruppo 15
+    "olografia_digitale": [
+    "https://docs.google.com/forms/d/1ixCjKigBIaWNgdJRi2apBGjTlz64sDImp1JrWDYt_eY",
+    "https://docs.google.com/forms/d/1-6TQ9U-5x45aHAqrQAsLumC6j8WjSacvqic85LuAB6o",
+    "https://docs.google.com/forms/d/1iRSgtob6KGAL-ulG6CljO9sw0a86eClyQgKdUs6s8p4",
+    "https://docs.google.com/forms/d/1idTrvzrXb1V0zjP3ljIZS-6WR-6oygrJ3nwV_UJZSuM",
+    "https://docs.google.com/forms/d/11DVKW0qYkFQKP-7PnsOzmc7mFGTD1vOHEwCYQy_51wE",
+    "https://docs.google.com/forms/d/1TzTV9iRm-LM9r_4_Cp0PPehoqdm42YCokmItUbVnM8U",
+    "https://docs.google.com/forms/d/1OeKD4UjcaajkXfsyN-_bB_Da-Mm9NrXK1aF6d6pwkCM",
+    "https://docs.google.com/forms/d/1pXwC7GrWNeiJwRFr2z5DN93WMwJvmGET69pda-VFMxc",
+    "https://docs.google.com/forms/d/1U2ILNCpX2KnoeLDulEkkeaKP6Hg8Ay6d8bdfTKTbFKI",
+    "https://docs.google.com/forms/d/1I6BsKOiKzwScm3lfE5VDh992yxcmLeNkPchTqLYPY5o",
+            ],
+    // 19
+    //gruppo 29
+    "giacca_in_pelle_da_scarti_alimentari": [
+    "https://docs.google.com/forms/d/1DqH8Qlh7W3wSiIqWeslYIBMFOeGzTabZS0JA0QdsRqM",
+    "https://docs.google.com/forms/d/1OvO8LrAwVpPOytSQUdsQWuI6CfMbh64bDEk-anupZCU",
+    "https://docs.google.com/forms/d/1enfemtIOL4FSJC2agFJwv7Gz3S0sau7LsyftNiufMzE",
+    "https://docs.google.com/forms/d/1erh4fABK8cdOb-ekexDL1AbjlBjbEmSgR26nnSzoZWo",
+    "https://docs.google.com/forms/d/17ZmWPLlGmInkRuNmfFpHAlNTg4nenxPHaq9usYiA1hQ",
+    "https://docs.google.com/forms/d/1taTJvZSEBlVO3tjGqBgRqScaO9GKm_udQyGlU2mshRg",
+    "https://docs.google.com/forms/d/1D0qvhlZ1QNsEF2-SIgTCRbyZYV4XxgxGTlLHCv1k5Q8",
+    "https://docs.google.com/forms/d/1uWzHiWmqomFWaoCUJuKVYh2wcPNWmOD9Lhl5FEnSM7s",
+    "https://docs.google.com/forms/d/1fylhhKtoxfQlaD0Q_SYQhiyzqGBdgghtXJJ20JV1CRM",
+    "https://docs.google.com/forms/d/1vByGIfbl57QrlwN-ENNjF7LEZVGi-aHRq119qHH6Rzg",
+            ],
+    // 20
+    //Gruppo 27
+    "smart_clothing_aptici": [
+    "https://docs.google.com/forms/d/1HMd3ygLNNpdU4GoexnMDK_wDuKJ5rFooGNYF9Co1f6E",
+    "https://docs.google.com/forms/d/1lHrtJRI6gtg986upIDybvObbheFwGp6TUyjeaQjYd2g",
+    "https://docs.google.com/forms/d/17NYM7641wF1aWOF3IeqjSckff3CJ8W3IlesTwxjhHXk",
+    "https://docs.google.com/forms/d/1KLISXqnJEPehPnV7IzBwWI4pQ_ovbmYMzwKHUeHa8Uo",
+    "https://docs.google.com/forms/d/1cyEvbvyiQfOF-t1Q7s8p1t98jc9_ngHrMwWbv9fIpYA",
+    "https://docs.google.com/forms/d/1d6nw-muIo6dx3ySCAym-oSKuBY5f62TwBQA7W1PaHV0",
+    "https://docs.google.com/forms/d/1MTvjSuXBaSI-VfMaqkIeDIZEv-1JwHQPrXWMLokGZGQ",
+    "https://docs.google.com/forms/d/1zr227Cjn47IN0IJw7MKXMqC0-HVg3XQuMxqBd_RO9Uw",
+    "https://docs.google.com/forms/d/1YdOQFPsWSxIGVwR8vqRK4rNlSrozVRl-KIAxyoxV4_Y",
+    "https://docs.google.com/forms/d/1xpUe85jH_Cyp1mVXBPvCnaL0OQpFEQDYXfz7lVVXFtY",
+            ],
 };
 
 
