@@ -10,7 +10,18 @@ var key = url.split("?")[1];
 // var altezza = window.screen.height; 
 // var altezza = "1920px"; 
 
-
+var frasi_donazione = [ 
+    "Offrimi un caffè 😪",
+    "Offrimi un caffè 😉",
+    "Offrimi un caffè ☕",
+    "Offrimi un caffè 😪",
+    "Offrimi un caffè 😉",
+    "Offrimi un caffè 😉",
+    "DONA UN SOLDO AL TUO WITCHER",
+    "Kaffèèè!1!?? 👴🏻",
+    "Birretta? 🍻",
+    "Coffee me ☕",
+    "Dona il tuo 5x1000" ];
 
 // console.log(url);
 // console.log("chiave " +key)
@@ -428,6 +439,20 @@ var link = {
     "https://docs.google.com/forms/d/1wv71Qn9cdMkj7sfR-6uibQViYfIjh3VvQNLnTorSjM4",
     "https://docs.google.com/forms/d/1bRRVN36wiQbuYtWvE4nqEt_ZTgoazmefpMQ7NMYWM94",
             ],
+            // 29		
+//Gruppo 38
+"device_per_non_udenti": [
+    "https://docs.google.com/forms/d/1A5RkqwllkPJKEw3zArsLj04iua8Y72PT_oLz3HCVv6g",
+    "https://docs.google.com/forms/d/1kX3kdg4399bsaCSEEhy7-uom4FJcEkzWK_vkbau-dQc",
+    "https://docs.google.com/forms/d/1ixPOBHPOkXfwbPCTuv-T6G8MjciI1jLpsNqQDJTRvX0",
+    "https://docs.google.com/forms/d/1hhpjmyvmOrCI_XExTSgkiEA8cVzg0_imzG7GPFKPz4I",
+    "https://docs.google.com/forms/d/1hrXU1msHPpeR7k7gE3DU8kcf8GPEgtLbwHMD49yubOg",
+    "https://docs.google.com/forms/d/16EQaZ0vcakbuDWWVCJMytMdU21YKI8dxRjTYmydTlAk",
+    "https://docs.google.com/forms/d/1B4mxHDnVrcnapu0NtShHY1AZfp-_UYrV-LuQPidwSek",
+    "https://docs.google.com/forms/d/1RaSP7it22fkw5M8IRaJILBZqApjEsaHVQViDtbP3hzU",
+    "https://docs.google.com/forms/d/1kuRVH2h8Fhps4tflLup_AM3Yl1s7p1xcvBpoj7Ev7Ho",
+    "https://docs.google.com/forms/d/15SLbCGBZuXSBKZtbQ3OPlLsAmySzXtvCEmW4BMZZGKA",
+            ],
 };
 
 
@@ -632,10 +657,10 @@ function home() {
     const h1 = document.createElement("H1");
     const messaggio = document.createElement("P");
     const div_messaggio = document.createElement("DIV");
-    messaggio.innerHTML = "AAA sto cercado di risolvere un bug che bloccava tutto. Per adesso i sondaggi vengono caricati in modo random";
-    // messaggio.innerHTML = "Premendo sul pulsante di fianco al link compariranno i risultati dei sondaggi (se si preme poi sui singoli numeri si viene reindirizzati al sondaggio in questione";
+    // messaggio.innerHTML = "AAA sto cercado di risolvere un bug che bloccava tutto. Per adesso i sondaggi vengono caricati in modo random";
+    messaggio.innerHTML = "Premendo sul pulsante di fianco al link compariranno i risultati dei sondaggi (se si preme poi sui singoli numeri si viene reindirizzati al sondaggio in questione";
     messaggio.style["margin"] = "0px"
-    div_messaggio.style["margin"]="20px";
+    // div_messaggio.style["margin"]="20px";
     h1.innerHTML = "Elenco sondaggi";
     document.body.appendChild(h1);
     document.body.appendChild(document.createElement("BR"));
@@ -643,7 +668,7 @@ function home() {
     document.body.appendChild(document.createElement("BR"));
     document.body.appendChild(document.createElement("BR"));
 
-
+    document.body.style["padding"] = "20px";
 
 
     for (let i = 0; i < Object.keys(link).length; i++) {
@@ -671,6 +696,7 @@ function home() {
         // div2.style["margin-top"] = "0px";
         div2.style["line-height"] = "1.5";
         div2.style["line-break"] = "anywhere";
+        button.className ="risultati";
         button.innerHTML = "v";
         button.style = "margin: 10px";
         button.setAttribute("onclick",'richiesteHome("' + key + '",this)'); 
@@ -689,10 +715,80 @@ function home() {
 
 
     }
-    document.body.appendChild(document.createElement("BR"));
-    document.body.appendChild(document.createElement("BR"));
+   
+    
+    
+    // recensioni();
+    crediti();
 
 }
+function crediti() {
+    for (let i = 0; i < 10; i++) {
+    document.body.appendChild(document.createElement("BR"));
+        
+    }
+
+    const div_crediti = document.createElement("DIV");
+    const p_crediti = document.createElement("P");
+    const a_crediti = document.createElement("A");
+    const button_crediti = document.createElement("BUTTON");
+
+    div_crediti.className = "pie";
+    p_crediti.innerHTML = "Sostieni questo duro lavoro:";
+    p_crediti.className = "credit";
+    a_crediti["href"] = "https://bit.ly/3cPlhXS";
+    button_crediti.className = "donazione";
+    button_crediti.innerHTML =  frasi_donazione[Math.floor(Math.random() * frasi_donazione.length)];
+
+
+    document.body.appendChild(div_crediti);
+    document.body.appendChild(div_crediti).appendChild(p_crediti);
+    document.body.appendChild(div_crediti).appendChild(a_crediti).appendChild(button_crediti);
+    for (let i = 0; i < 3; i++) {
+        document.body.appendChild(div_crediti).appendChild(document.createElement("BR"));
+            
+        }
+}
+function recensioni() {
+
+    for (let i = 0; i < 5; i++) {
+        document.body.appendChild(document.createElement("BR"));
+            
+        }
+        document.body.appendChild(document.createElement("HR"));
+        for (let i = 0; i < 2; i++) {
+            document.body.appendChild(document.createElement("BR"));
+                
+            }
+    var cit = ["Miglior sito dell'anno", "Genio!", "Questo sito è molto italiano",  "Ma te le scrivi da solo ste cose?", "Sì"];
+    var fonte = ["Tenente Colombo", "Renè Ferretti", "Stanis La Rochelle", "Persona normale", "Io" ]
+    var div = new Array;
+    var p_cit = new Array;
+    var p = new Array;
+    div[0] = document.createElement("DIV");
+    // div[0].style = "display: flex;";
+    for (let i = 0; i <5; i++) {
+        div[i+1] = document.createElement("DIV");
+        p_cit[i] = document.createElement("P");
+        p[i] = document.createElement("P");
+        div[i+1].className = "div_cit";
+        p_cit[i].className = "p_cit";
+        p[i].className = "p_cit_fonte";
+        p_cit[i].innerHTML = '"' + cit[i] + '"';
+        p[i].innerHTML = fonte[i];
+        
+        document.body.appendChild(div[0]).appendChild(div[i+1]);
+        document.body.appendChild(div[0]).appendChild(div[i+1]).appendChild(p_cit[i]);
+        document.body.appendChild(div[0]).appendChild(div[i+1]).appendChild(p[i]);
+    }
+  
+        document.body.appendChild(document.createElement("BR"));
+            
+  document.body.appendChild(document.createElement("HR"));
+
+}
+
+
 function nontrovato() {
     document.body.appendChild(document.createElement("BR"));
     document.body.appendChild(document.createElement("BR"));

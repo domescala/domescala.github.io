@@ -3,7 +3,32 @@
    License: none (public domain)
 */
 
+@keyframes rainbow{
+    0%{
+		background-color: rgb(253, 117, 54);
+		filter: drop-shadow(0px 0px 15px  rgb(253, 117, 54));
+		
+    }
+    33%{
+		background-color: rgb(253, 54, 54);
+		filter: drop-shadow(0px 0px 15px  rgb(253, 54, 54));
+		
+    }
+    66%{
+        background-color: hsl(345, 95%, 60%);
+		filter: drop-shadow(0px 0px 15px  hsl(345, 95%, 60%));
+        
+    }
+    100%{
+        background-color: rgb(107, 54, 253);
+		filter: drop-shadow(0px 0px 15px  rgb(107, 54, 253));
+    }
+} 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
 @keyframes intro{
 	0%{
@@ -62,8 +87,8 @@ table {
 	border-spacing: 0;
 }
 p{
-    margin: 10px;
-    margin-left: 20px;
+    /* margin: 10px; */
+    /* margin-left: 20px;  */
 	font-family: "Roboto"; 
 	font-size: 15px; 
     
@@ -79,6 +104,8 @@ h1{
   font-family: "Roboto";  
   font-size: 28px;
   margin: 20px;
+  margin-left: 0px;
+  
 
 }
 h2{
@@ -92,7 +119,7 @@ body{
 	animation: intro 1s ease-in-out alternate infinite;
 
 }
-button{
+button.risultati{
 	background-color: rgb(255, 255, 255);
 	border-radius: 13.5px;
 	border-color: rgba(181, 234, 255, 0);
@@ -105,4 +132,62 @@ button{
 	border: 0;
 	filter: drop-shadow(1px 1px 2px #8484848f);
 	
+}
+button.donazione{
+    animation: rainbow 15s linear infinite alternate forwards;
+	background-color: rgb(253, 117, 54);
+	filter: drop-shadow(0px 0px 5px #ff3d3d);
+	color: white;
+    font-size: 16px;
+	padding: 10px 20px 10px 20px;
+	height: 100%;
+	opacity: 1;
+    min-height: 40px;
+    margin-bottom:10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+	font-family:  "roboto";
+}
+p.credit{
+    color: rgb(255, 255, 255);
+	font-size: 14px;
+	margin: 10px;
+    text-align: center; 
+	font-family: "roboto";
+	/* font-style: italic; */
+	
+	line-height: 20px; 
+	/* margin-bottom: 20px; */
+
+	/* filter: drop-shadow(0px 0px 5px #ffffff); */
+	
+}
+div.pie{
+	text-align: center;
+    background-color: rgb(43, 43, 43);
+    margin: -25px -20px -25px -20px;
+    padding: 10px 40px 10px 40px;
+    border-top: 15px  rgb(34, 34, 34) solid;
+	border-bottom: 20px   rgb(43, 43, 43) solid;
+bottom :0px}
+	
+.p_cit
+{
+	margin: 0px;
+	font-size: 24px;
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-weight: 200;
+}
+.div_cit{
+	text-align: center;
+	padding: 10px;
+	/* display: inline-block; */
+
+
+}.p_cit_fonte{
+	font-style: italic;
+
 }
