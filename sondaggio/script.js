@@ -315,34 +315,6 @@ var link = {
     "https://docs.google.com/forms/d/1YdOQFPsWSxIGVwR8vqRK4rNlSrozVRl-KIAxyoxV4_Y",
     "https://docs.google.com/forms/d/1xpUe85jH_Cyp1mVXBPvCnaL0OQpFEQDYXfz7lVVXFtY",
             ],
-            // 21
-//gruppo 28
-"legno_trasparente_il_futuro_per_le_tue_finestre": [
-    "https://docs.google.com/forms/d/1RSjybQeABrxzmJKlSFUHTmh3rEmPjVoY5C4AisCxy6U",
-    "https://docs.google.com/forms/d/1ceDTUELg3HeTl7PNf1sxNssOeKnKqUiUjplbxv_5OJs",
-    "https://docs.google.com/forms/d/1WuYFZeIf2ZzoTq0fEA8tfwDVvELh69ErRder9A7DiRI",
-    "https://docs.google.com/forms/d/1_dVQwuOj-QAfD3z_dmFPe_WyqDEWZwfL8Akbr-G7fe0",
-    "https://docs.google.com/forms/d/16t7heS_4j7FoY8Y7ppuQ7KECVVoV0pmCKHTD-eLZOHk",
-    "https://docs.google.com/forms/d/1yXzpbY_UQaLO-UYnm_WAeXVGgzLxVtbyzBgmKALST1o",
-    "https://docs.google.com/forms/d/1UYvVx-SoJ6oodZtH1pQRiHdNOxlgeE-Ip4RqLuI2wlE",
-    "https://docs.google.com/forms/d/1P1mNGTEiaZ8HmJx6qty6rQYOTzQNYXCteHgznU2sWdA",
-    "https://docs.google.com/forms/d/1-7fjTgZz4FkW-5mD8ILmiWpxg33MuYFmK6s5YTQlKZs",
-    "https://docs.google.com/forms/d/1fXB2Q7OM-CLWLs1D12ckd_gp3bIh7aiswL-WF1IeXQY",
-            ],
-    // 22
-    //Gruppo 39
-    "imballaggi_in_micelio": [
-    "https://docs.google.com/forms/d/1nXwLljoQ9h6BtXOaeNGSK33aKugaEPbznS44TIqO7E0",
-    "https://docs.google.com/forms/d/1fQeGvdF_f0PDE1JDfu6DQaERMlj4SF7Tbu3D7sgMHaE",
-    "https://docs.google.com/forms/d/1qW2ZqCbc6KElOSnwQs3uoiVQ53cZr5_M8BzKviJwHAo",
-    "https://docs.google.com/forms/d/1hlMtW6EYdrt3LG74IYBhyJFPY9yukdV10pAnVT3iGNo",
-    "https://docs.google.com/forms/d/1_jCdsoumshj9hvPJ7Ceojb_Edc1EZvznLoatTJYCT7k",
-    "https://docs.google.com/forms/d/1-2jNO7NSpipSwdmz5UBehR5Q7pCX_0_LfxGGW20iQAc",
-    "https://docs.google.com/forms/d/1ypLCii6dPKX493fT2vD7z7FCYAKKjvPxrCnrJGItojc",
-    "https://docs.google.com/forms/d/1k_t3Rq18gEfFXcyEeblEBPeZmMV2bLqBN_Z7wQ4TGXs",
-    "https://docs.google.com/forms/d/1jp6z3dt0N-65pMV78kHC2xe1ePt8_5QuAtLzWw4iQkU",
-    "https://docs.google.com/forms/d/1StPn-WyljDA7pMHq8-og_X4EIIH2mwAl5-_AE9ZWsbY",
-            ],
 };
 
 
