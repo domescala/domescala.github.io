@@ -386,6 +386,20 @@ var link = {
     "https://docs.google.com/forms/d/1DnEWYm9YAjnsudF-g6GQt7Ko8MBC0A1Hch_BEuE95pE",
     "https://docs.google.com/forms/d/1MKp7e5ZyyZ4PdQuxK2DJ-i2cfSNWvTNbyCfhip4beOk",
             ],
+            // 26		
+//Gruppo 3 (2)
+"smart_speaker_per_una_didattica_intelligente_docenti": [
+    "https://docs.google.com/forms/d/1r4fNQkkw1FO-xb5Fa_XHFMsNdnnTrzd1MdnlS1Xk0J0",
+    "https://docs.google.com/forms/d/1UiBw5ifIc7OxxHXOBa8K4k1qmQctQNMmNC4LKhENHO4",
+    "https://docs.google.com/forms/d/1XzippBofbmlLb6XZMgt4yAfG1fog79mppaNlR_0U98k",
+    "https://docs.google.com/forms/d/11xB8YYUdAZ4rfGUxIdgHvnI-ozOw_Ilbgvx91RGgEjg",
+    "https://docs.google.com/forms/d/1PPcDi7bm4bDXLPknXk3Yk2G43Fr8ZQDrk6p4R4tVKkI",
+    "https://docs.google.com/forms/d/1DBQ9Gz4nlijM68RBSSblva-yhVRm2JUxUN9jDve5_cY",
+    "https://docs.google.com/forms/d/1HkSMrTAwitap3RrPWEXI46H0-K2XXf7ZmhLYYIbXpAw",
+    "https://docs.google.com/forms/d/1rUPypvCqkCHGusErTjq-Dtfa3V15bVq6TJ_Z8H7IvCo",
+    "https://docs.google.com/forms/d/1SFHWCFQAJZN33yzQblo4YwUXMyl_pTAzNevaj-OjERc",
+    "https://docs.google.com/forms/d/165I1zVGO9dG-F42C7jqqIIVwr8Q32ewjvKp6pnUWbP0",
+            ],
 };
 
 
