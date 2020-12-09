@@ -386,7 +386,7 @@ var link = {
     "https://docs.google.com/forms/d/1DnEWYm9YAjnsudF-g6GQt7Ko8MBC0A1Hch_BEuE95pE",
     "https://docs.google.com/forms/d/1MKp7e5ZyyZ4PdQuxK2DJ-i2cfSNWvTNbyCfhip4beOk",
             ],
-            // 26		
+            // 26
 //Gruppo 3 (2)
 "smart_speaker_per_una_didattica_intelligente_docenti": [
     "https://docs.google.com/forms/d/1r4fNQkkw1FO-xb5Fa_XHFMsNdnnTrzd1MdnlS1Xk0J0",
@@ -399,6 +399,34 @@ var link = {
     "https://docs.google.com/forms/d/1rUPypvCqkCHGusErTjq-Dtfa3V15bVq6TJ_Z8H7IvCo",
     "https://docs.google.com/forms/d/1SFHWCFQAJZN33yzQblo4YwUXMyl_pTAzNevaj-OjERc",
     "https://docs.google.com/forms/d/165I1zVGO9dG-F42C7jqqIIVwr8Q32ewjvKp6pnUWbP0",
+            ],
+            // 27
+//Gruppo 3 (3)
+"smart_speaker_per_una_didattica_intelligente_genitori": [
+    "https://docs.google.com/forms/d/1tW1PaxQ40sxslN6l7YoxFHCHa_Vp7tzro8NXmZNnYos",
+    "https://docs.google.com/forms/d/108aZS2AfA1tHs38cp-HNm7NYVEivC0ASjww0kmy0ims",
+    "https://docs.google.com/forms/d/1NbEGWY0Ersn8Z2FJzsbkPg-Nbu0fE8OMhQZ1gCS3Nyo",
+    "https://docs.google.com/forms/d/1VniYwFNoyug9eNbMsZ0v9kcctZqQ2Y7ZwgQ3SfaTdSU",
+    "https://docs.google.com/forms/d/1eCE18kY8lA9AKax-SETuMtwBOGUu4MAJIT5myPOLmPg",
+    "https://docs.google.com/forms/d/1FemuW-NuGUdhHKdelynx48DR4WO-EykWZTsyn2-rq0Y",
+    "https://docs.google.com/forms/d/1NM6zJudpcjL234hmafRpN2Yoqa6Je7fOgwwfpWkuxvQ",
+    "https://docs.google.com/forms/d/1_38fGkZ15ck29lZHrrbpL4gtBOqyBQVqYipkiIMsi3U",
+    "https://docs.google.com/forms/d/1k9VIpEyyIwt4766a9JQU9GYlBWURhyd2yi4L9f_0EWo",
+    "https://docs.google.com/forms/d/135NQuOpXiA3tI1v0f1PNPagLUQgQm6wspfNclP_YUAc",
+            ],
+            // 28
+//Gruppo 32
+"agritech": [
+    "https://docs.google.com/forms/d/1ImG9ATHSBPNifyObpcocETTfPIXbBDyz6RetBdPrnr0",
+    "https://docs.google.com/forms/d/1Ps8hpoqABx5qGKONAcYsxEmK_W9NEQS4v3Qjh7g1yBg",
+    "https://docs.google.com/forms/d/1puMA28Zuc1tjUNje-T4dpcZ3qVkhayjjnSfeM2eZNI4",
+    "https://docs.google.com/forms/d/1gjOO_2lSW4CgD31FPbxjv7WqYs6GAF_085yzQBWvvyo",
+    "https://docs.google.com/forms/d/1uAfaY3mqs5NZ8wi6qZcN0ZQBAr_P5PS9w7wSQy1JUCI",
+    "https://docs.google.com/forms/d/1ZVjIET8ntwHFflmi7K11EDulhB_CQwrL_5_m32K_ibU",
+    "https://docs.google.com/forms/d/1xLGpIODqc9LNAX70lW0V2skdqGwX_V9qJlGQP2xBVSc",
+    "https://docs.google.com/forms/d/1V3XLEQkMd_wKaN4GCPqhMeZ5Gs8EcOAVPCT2u4RfxGU",
+    "https://docs.google.com/forms/d/1wv71Qn9cdMkj7sfR-6uibQViYfIjh3VvQNLnTorSjM4",
+    "https://docs.google.com/forms/d/1bRRVN36wiQbuYtWvE4nqEt_ZTgoazmefpMQ7NMYWM94",
             ],
 };
 
@@ -450,8 +478,8 @@ function f() {
 
 }
 function richieste() {
-    risposte = [0,0,0,0,0,0,0,0,0,0];
 
+    setTimeout(() => {  // bypass se impiega troppo tempo a caricare
 
     mostra_form();
 
@@ -462,7 +490,6 @@ function richieste() {
 
     //     $.ajaxSetup({
     //         scriptCharset: "utf-8", //or "ISO-8859-1",
-    //         contentType: "application/json; charset=utf-8"
     //     });
     //     var linkanalitycs = link[prop][i] + "/viewanalytics";
     //     $.getJSON("https://api.allorigins.win/get?url=" +
@@ -473,23 +500,27 @@ function richieste() {
 
     //             var c = $(data.contents).find("script")[0].innerHTML;
     //             eval(c);
-    //             risposte[i] = ANALYTICS_LOAD_DATA_[5];
 
     //             console.log(i);
+        });
+            // encodeURIComponent(linkanalitycs) + "&callback=?",
 
     //             console.log(risposte[i]);
     //             console.log(check());
+                var c = $(data.contents).find("script")[0].innerHTML;
+                risposte[i] = ANALYTICS_LOAD_DATA_[5];
 
     //             if (check()) {  // se l'array di risposte è pieno 
     //                 mostra_form()
-    //             }
-    //         });
+
+                if (check()) {  // se l'array di risposte è pieno 
+                    mostra_form()
+                }
+
+        ;
 
 
-    //     ;
-
-
-    // }
+    }
 
 }
 
@@ -497,6 +528,7 @@ function mostra_form() {
     // console.log($(document).height());
     // var altezza = 1920;
 
+    stato = true;
     
     // console.log(altezza);
 
@@ -523,8 +555,10 @@ function mostra_form() {
 
     document.getElementById("form").style.height= ($(window).height() - 10) + "px"; // setto l'altezza del frame uguale all'altezza dello schermo
     
-
-    document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
+    if (index_form_minore != undefined) {
+        document.getElementById("form").src = link[prop][index_form_minore] + "/viewform?embedded=true";
+        
+    }   
     // document.getElementById("form").style["height"] = "-webkit-fill-available";
     
     document.getElementById("idbody").style.animation = "none";
