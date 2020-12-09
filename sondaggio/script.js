@@ -432,6 +432,7 @@ var link = {
 
 
 
+var stato = false;
 
 
 
@@ -478,44 +479,43 @@ function f() {
 
 }
 function richieste() {
-
     setTimeout(() => {  // bypass se impiega troppo tempo a caricare
+        if (!stato) {
+            risposte = [0,0,0,0,0,0,0,0,0,0];
 
-    mostra_form();
+            console.log("bypass");
+            mostra_form();  
+        }
+
+    }, 8000);
+
 
 
     // a mali estremi
 
-    // for (let i = 0; i < (link[prop].length); i++) {
+    for (let i = 0; i < (link[prop].length); i++) {
 
-    //     $.ajaxSetup({
-    //         scriptCharset: "utf-8", //or "ISO-8859-1",
-    //     });
-    //     var linkanalitycs = link[prop][i] + "/viewanalytics";
-    //     $.getJSON("https://api.allorigins.win/get?url=" +
-    //     encodeURIComponent(linkanalitycs) + "&callback=?",
-    //     // $.getJSON("https://api.allorigins.win/get?url=" +
-    //         // encodeURIComponent(linkanalitycs) + "&callback=?",
-    //         function (data) {
-
-    //             var c = $(data.contents).find("script")[0].innerHTML;
-    //             eval(c);
-
-    //             console.log(i);
+        $.ajaxSetup({
+            scriptCharset: "utf-8", //or "ISO-8859-1",
+            contentType: "application/json; charset=utf-8"
         });
+        var linkanalitycs = link[prop][i] + "/viewanalytics";
+        $.getJSON("https://api.allorigins.win/get?url=" +
+        encodeURIComponent(linkanalitycs) + "&callback=?",
+        // $.getJSON("https://api.allorigins.win/get?url=" +
             // encodeURIComponent(linkanalitycs) + "&callback=?",
+            function (data) {
 
-    //             console.log(risposte[i]);
-    //             console.log(check());
                 var c = $(data.contents).find("script")[0].innerHTML;
+                
+                eval(c);
                 risposte[i] = ANALYTICS_LOAD_DATA_[5];
 
-    //             if (check()) {  // se l'array di risposte è pieno 
-    //                 mostra_form()
 
                 if (check()) {  // se l'array di risposte è pieno 
                     mostra_form()
                 }
+            });
 
         ;
 
@@ -527,7 +527,6 @@ function richieste() {
 function mostra_form() {
     // console.log($(document).height());
     // var altezza = 1920;
-
     stato = true;
     
     // console.log(altezza);
