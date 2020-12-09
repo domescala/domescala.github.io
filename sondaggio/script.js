@@ -393,37 +393,46 @@ function f() {
 
 }
 function richieste() {
-    
-    for (let i = 0; i < (link[prop].length); i++) {
-
-        $.ajaxSetup({
-            scriptCharset: "utf-8", //or "ISO-8859-1",
-            contentType: "application/json; charset=utf-8"
-        });
-        var linkanalitycs = link[prop][i] + "/viewanalytics";
-        $.getJSON("https://api.allorigins.win/get?url=" +
-            encodeURIComponent(linkanalitycs) + "&callback=?",
-            function (data) {
-
-                var c = $(data.contents).find("script")[0].innerHTML;
-                eval(c);
-                risposte[i] = ANALYTICS_LOAD_DATA_[5];
-
-                console.log(i);
-
-                console.log(risposte[i]);
-                console.log(check());
-
-                if (check()) {  // se l'array di risposte è pieno 
-                    mostra_form()
-                }
-            });
+    risposte = [0,0,0,0,0,0,0,0,0,0];
 
 
-        ;
+    mostra_form();
 
 
-    }
+    // a mali estremi
+
+    // for (let i = 0; i < (link[prop].length); i++) {
+
+    //     $.ajaxSetup({
+    //         scriptCharset: "utf-8", //or "ISO-8859-1",
+    //         contentType: "application/json; charset=utf-8"
+    //     });
+    //     var linkanalitycs = link[prop][i] + "/viewanalytics";
+    //     $.getJSON("https://api.allorigins.win/get?url=" +
+    //     encodeURIComponent(linkanalitycs) + "&callback=?",
+    //     // $.getJSON("https://api.allorigins.win/get?url=" +
+    //         // encodeURIComponent(linkanalitycs) + "&callback=?",
+    //         function (data) {
+
+    //             var c = $(data.contents).find("script")[0].innerHTML;
+    //             eval(c);
+    //             risposte[i] = ANALYTICS_LOAD_DATA_[5];
+
+    //             console.log(i);
+
+    //             console.log(risposte[i]);
+    //             console.log(check());
+
+    //             if (check()) {  // se l'array di risposte è pieno 
+    //                 mostra_form()
+    //             }
+    //         });
+
+
+    //     ;
+
+
+    // }
 
 }
 
@@ -533,7 +542,8 @@ function home() {
     const h1 = document.createElement("H1");
     const messaggio = document.createElement("P");
     const div_messaggio = document.createElement("DIV");
-    messaggio.innerHTML = "Premendo sul pulsante di fianco al link compariranno i risultati dei sondaggi (se si preme poi sui singoli numeri si viene reindirizzati al sondaggio in questione";
+    messaggio.innerHTML = "AAA sto cercado di risolvere un bug che bloccava tutto. Per adesso i sondaggi vengono caricati in modo random";
+    // messaggio.innerHTML = "Premendo sul pulsante di fianco al link compariranno i risultati dei sondaggi (se si preme poi sui singoli numeri si viene reindirizzati al sondaggio in questione";
     messaggio.style["margin"] = "0px"
     div_messaggio.style["margin"]="20px";
     h1.innerHTML = "Elenco sondaggi";
