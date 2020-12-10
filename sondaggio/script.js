@@ -473,6 +473,20 @@ var link = {
     "https://docs.google.com/forms/d/1APbkujWEBgbfEOaUKkhGms1FTe_F_PGnuvffXuFjPf4",
     "https://docs.google.com/forms/d/1c4yAm8O6mnnl44fEG9Te6XisqFjRfekH8sEFzcuX318",
             ],
+            // 31
+//Gruppo 33
+"podcast_digital_advertising": [
+    "https://docs.google.com/forms/d/1_oZXyU7otQGzk9voSAK5qQ_jXASS-i5gSov0hu5_-a0",
+    "https://docs.google.com/forms/d/1DjhMXrpENIPDN7x5z6ZRHV7hwXuFyHoGIUPGFsxBYgU",
+    "https://docs.google.com/forms/d/156CCoAf-8wUBXwgVL5W85at_omwH9CtzPZwa0RGWOuM",
+    "https://docs.google.com/forms/d/1EU7CaLe1gNR_XoQ1khFJriMsARu-VuFpnZ9pQ7zwSBw",
+    "https://docs.google.com/forms/d/1Tb8GsT8_7OcjasG2W2nl5g2nLtYS3yvAjPUM5vQnHX0",
+    "https://docs.google.com/forms/d/1ljqUbT4fL1ym6C85QEFFTm5XV2soNXfqFvJkfQVF5oo",
+    "https://docs.google.com/forms/d/1F-4XOICn4pSoZDtIashtvc7MnucvshaWtTQk4xROKKg",
+    "https://docs.google.com/forms/d/1Czrp0W-swQilW1QfFVsQhnHgw58gFfam3mN8ZNsFHa8",
+    "https://docs.google.com/forms/d/1A8nJ12cyPysLNoZyiea0DGpJ3bOJ1yty6BJdZ2YFD1E",
+    "https://docs.google.com/forms/d/10nVz_JsnbwVhTuf2CR59lng1YKyUCS8dQNdYwvXQr2Y",
+            ],
 };
 
 
