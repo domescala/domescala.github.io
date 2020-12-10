@@ -7,6 +7,12 @@ var risposte = new Array();
 var url = document.URL;
 
 var key = url.split("?")[1];
+if (key) {  // se esiste una chiave splitta via la roba in eccesso
+    key = key.split("&")[0];        //splitta & (se c'è) e prendi il primo blocco
+    key = key.split("=")[0];
+    key = key.split("?")[0];
+
+}
 // var altezza = window.screen.height; 
 // var altezza = "1920px"; 
 
