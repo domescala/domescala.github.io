@@ -860,7 +860,7 @@ function nontrovato() {
 
 
 function richiesteHome(a,b) {
-    var risultati = new Array(10);
+    var risultati = new Array(link[a].length);
     console.log(b);
     for (let i = 0; i < (link[a].length); i++) {
 
