@@ -691,7 +691,7 @@ function home() {
     const messaggio = document.createElement("P");
     const div_messaggio = document.createElement("DIV");
     // messaggio.innerHTML = "AAA sto cercado di risolvere un bug che bloccava tutto. Per adesso i sondaggi vengono caricati in modo random";
-    messaggio.innerHTML = "Premendo sul pulsante di fianco al link compariranno i risultati dei sondaggi (se si preme poi sui singoli numeri si viene reindirizzati al sondaggio in questione";
+    messaggio.innerHTML = "Premendo sul pulsante di fianco al link compariranno i risultati dei sondaggi (se si preme poi sui singoli numeri si viene reindirizzati al sondaggio in questione)";
     messaggio.style["margin"] = "0px"
     // div_messaggio.style["margin"]="20px";
     h1.innerHTML = "Elenco sondaggi";
@@ -752,7 +752,7 @@ function home() {
     
     
     // recensioni();
-    crediti();
+    // crediti();
 
 }
 function crediti() {
