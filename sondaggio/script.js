@@ -37,18 +37,18 @@ var prop = key;
 var link = {
 // 1
 //note
-"tenda_da_campeggio_innovativa": [
-"https://docs.google.com/forms/d/1mwQvflYLPuJimfTQSs_22qfKS64QRmllZbC7s1nD9Ek",
-"https://docs.google.com/forms/d/1RYb7rwZAD_VZwIE2j9g7JfcTEBrY9FhAtjHRlpVhuvs",
-"https://docs.google.com/forms/d/1dQRvPfKtH4McEEnU1LjCy5OivuVbaf6tkrlAt079el0",
-"https://docs.google.com/forms/d/1O5Dd7Tv-_szDg-n3M5wZ-AkMadzQIWlc3vK2hEDAakI",
-"https://docs.google.com/forms/d/1hyoHuL9TeKjXP3v-PCeoFADwOeyGf9tEmEHoHZ7g7eI",
-"https://docs.google.com/forms/d/1rB2GXpd8MLnTmrSkitmd7sP9XCayFPu_Wg85BzTSTxI",
-"https://docs.google.com/forms/d/1NiIlDHxet-SBf22VnrHlquxv8AdjgUNpXdj7vabvUD8",
+// "tenda_da_campeggio_innovativa": [
+// "https://docs.google.com/forms/d/1mwQvflYLPuJimfTQSs_22qfKS64QRmllZbC7s1nD9Ek",
+// "https://docs.google.com/forms/d/1RYb7rwZAD_VZwIE2j9g7JfcTEBrY9FhAtjHRlpVhuvs",
+// "https://docs.google.com/forms/d/1dQRvPfKtH4McEEnU1LjCy5OivuVbaf6tkrlAt079el0",
+// "https://docs.google.com/forms/d/1O5Dd7Tv-_szDg-n3M5wZ-AkMadzQIWlc3vK2hEDAakI",
+// "https://docs.google.com/forms/d/1hyoHuL9TeKjXP3v-PCeoFADwOeyGf9tEmEHoHZ7g7eI",
+// "https://docs.google.com/forms/d/1rB2GXpd8MLnTmrSkitmd7sP9XCayFPu_Wg85BzTSTxI",
+// "https://docs.google.com/forms/d/1NiIlDHxet-SBf22VnrHlquxv8AdjgUNpXdj7vabvUD8",
 // "https://docs.google.com/forms/d/1RMFIHcPW5-lihOV_FY6eqlBpElwpm1IpDXntttEnzmU",
-"https://docs.google.com/forms/d/1pmDiu5aDyrqlVjMRpCEs7S-WsHGeSrWtchuSARHslVc",
-"https://docs.google.com/forms/d/1jF3MGNRn9MLZyKMS-_XKxlPweZ2dDTmKlKJQG6Y9EkI",
-],
+// "https://docs.google.com/forms/d/1pmDiu5aDyrqlVjMRpCEs7S-WsHGeSrWtchuSARHslVc",
+// "https://docs.google.com/forms/d/1jF3MGNRn9MLZyKMS-_XKxlPweZ2dDTmKlKJQG6Y9EkI",
+// ],
     "the_alla_pesca_o_the_al_limone": [
         "https://docs.google.com/forms/d/12r0Vhc5mitPBadE0MZg2Y2C1huYhBX0sehTv-Ejdcc0",
         "https://docs.google.com/forms/d/14_SU0eaAeSegTjjm6zjNx2C8aBMk6JLer03ocgVMY5g",
